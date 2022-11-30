@@ -37,7 +37,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(400, 400) .parent("P5Canvas");
 }
 
 function draw() {

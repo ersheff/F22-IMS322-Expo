@@ -1,0 +1,64 @@
+.carousel-container{
+  display: flex;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  gap: 1ch;
+}
+
+.button{
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  font-size: 8px;
+  margin: 4 px 2px;
+  border-radius: 50%;
+}
+
+.button:hover{
+  background-color: red;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+.active-slide{
+  display: block;
+}
+
+.carousel-section1{
+    font-size: 15px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.carousel-section2{
+    font-size: 15px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.carousel-section3{
+    font-size: 15px;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

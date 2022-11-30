@@ -7,9 +7,11 @@
   <title>My Gallery</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="style-photo.css" rel="stylesheet" type="text/css" />
+  <link href="style-carousel.css" rel="stylesheet" type="text/css" />
   <script src="p5.min.js"></script>
-  <script src="script.js" defer></script>
+  <script src="initial-script.js" defer></script>
   <script src="p5-script.js" defer></script>
+  <script src="carousel.js" defer></script>
   <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
 
 </head>
@@ -74,9 +76,46 @@
 
     </section>
 
-    <section id="section2"> DIY Carousel </section>
+    <section id="section2"> DIY Carousel 
 
-    <section id="section3"> P5 Project </section>
+      <!-- A suggestion for organizing your carousel: --> 
+  <div class ="slideshow-container">
+
+  <!-- images-->
+    <div class ="mySlides fade active-slide" id = "carousel-section1">
+      <article class="carousel-section1"> This is Doug the Dog.</article>
+      <img src = "dogpic1.1.jpg" alt ="dogpic1">
+    </div>
+    
+    <div class ="mySlides fade" id = "carousel-section2">
+      <article class="carousel-section2">This is Paul the Puppy. </article>
+      <img src ="dogpic2.1.jpg" alt ="dogpic2">
+    </div>
+    
+    
+    <div class ="mySlides fade" id = "carousel-section3">
+      <article class="carousel-section3"> This is Harold the Hound. </article>
+      <img src = "dogpic3.1.jpg" alt ="dogpic3">
+    </div>
+    
+  </div>
+
+  
+
+    <div class ="button-container" >
+      <button class = "button button1" id = "btn-1"> 1 </button>
+      <button class = "button button2" id = "btn-2"> 2 </button>
+      <button class = "button button3" id = "btn-3"> 3 </button>
+    </div>
+
+
+    </section>
+
+    <section id="section3"> P5 Project
+    <div id="P5Canvas">
+    </div>
+    
+    </section>
 
   </main>
 
