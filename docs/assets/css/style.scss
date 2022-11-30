@@ -1,0 +1,21 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+.page-header {
+  background-color: #C3142D;
+  background-image: none;
+}
+
+a.btn {
+  display: none;
+}
+
+.main-content h1 {
+  color: black;
+}
+
+.main-content h2 {
+  color: #C3142D;
+}
