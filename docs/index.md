@@ -12,7 +12,7 @@ As a final semester project, students assembled 3-4 of these into a single galle
 | [Whitley Calder](IMS322A/Project-2-My-Gallery-WhitleyCalder/index.html) | [Emily Edwards](IMS322B/Project-2-My-Gallery-emilyedwards28/index.html) |
 | [Harrison Frisk](IMS322A/Project-2-My-Gallery-harrisonfrisk/index.html) | [Tanner Hockman](IMS322B/Project-2-My-Gallery-tannerhockman/index.html) |
 | [Alex Haberman](IMS322A/Project-2-My-Gallery-AlexHabes1/index.html)     | [Lexie Holland](IMS322B/Project-2-My-Gallery-LexieHolland/index.html)   |
-| [Kylee Halter](IMS322A/Project-2-My-Gallery-Halterkj/index.html)        | [Abigail Hunter](IMS322B/Project-2-My-Gallery-hunterag/index.html)      |
+| [Kylee Halter](IMS322A/Project-2-My-Gallery-Halterkj/index.html)        | [Abbey Hunter](IMS322B/Project-2-My-Gallery-hunterag/index.html)      |
 | [Lauren Harris](IMS322A/Project-2-My-Gallery-LaurenHarris14/index.html) | [Brianna Lucas](IMS322B/Project-2-My-Gallery-lucasbe/index.html)        |
 | [Nathan Harris](IMS322A/Project-2-My-Gallery-harri538/index.html)       | [Parks Marilla](IMS322B/Project-2-My-Gallery-skraparks/index.html)      |
 | [Buddy Hollmeyer](IMS322A/Project-2-My-Gallery-bhollmeyer/index.html)   | [Zach McCoy](IMS322B/Project-2-My-Gallery-user4091607/index.html)       |
