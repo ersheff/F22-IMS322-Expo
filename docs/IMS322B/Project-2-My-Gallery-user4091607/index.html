@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+
+
+</head>
+
+<body>
+  <h1>Zach's Media Gallery</h1>
+
+  <nav>
+    <button class="active-button" id="tab1">1</button>
+    <button id="tab2">2</button>
+    <button id="tab3">3</button>
+  </nav>
+
+  <main>
+   <section class="active-section" id="section1">
+      <header>
+        <h1 style="font-family: Arial, Helvetica, sans-serif;">Golf Gallery</h1>
+      </header>
+      <div>
+        <div class="flex-container" id="first">
+          <div class="flex-col">
+            <img class="course" src="course.jpg" alt="Golf Course">
+            <div class="caption">
+              <p>A look down the green and the fairway.</p>
+            </div>
+          </div>
+          <div class="flex-col">
+            <img class="driver" src="driver.jpg" alt="Driver">
+            <div class="caption">
+              <p>Teeing off with your driver.</p>
+            </div>
+          </div>
+          <div class="flex-col">
+            <img class="putting" src="putting.jpg" alt="Putting">
+            <div class="caption">
+              <p>You line up the ball before you putt on the green.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex-row" id="second">
+          <div class="flex-container">
+            <div class="flex-col">
+              <img class="sand" src="sand.jpg" alt="Bunker">
+              <div class="caption">
+                <p>You want to avoid the sand bunkers.</p>
+              </div>
+            </div>
+
+            <div class="flex-col">
+              <img class="tee" src="tee.jpg" alt="Golf Tee">
+              <div class="caption">
+                <p>You tee the ball up to hit your driver off the tee.</p>
+              </div>
+            </div>
+
+            <div class="flex-col">
+              <img class="wedges" src="wedges.jpg" alt="Wedges">
+              <div class="caption">
+                <p>Wedges are used for short range application.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="section2">
+      <div class="title">
+        <h4>How Many of Each Golf Club people had at the Driving Range (comparitavely)</h4>
+      </div>
+      <div class="viz">
+        <p>Drivers</p>
+        <div id="drivers"></div>
+        <p>Woods</p>
+        <div id="woods"></div>
+        <p>Irons</p>
+        <div id="irons"></div>
+        <p>Wedges</p>
+        <div id="wedges"></div>
+        <p>Putters</p>
+        <div id="putters"></div>
+      </div>
+      <div class="vals">
+        <div class="avg">
+          <p>Avg Driver Distance (yards): </p>
+          <p id="avgDis"></p>
+        </div>
+        <div class="totalD">
+          <p>Total Distance between 17 golfers: </p>
+          <p id="totalDis"></p>
+        </div>
+        <div class="totalP">
+          <p>Total Clubs: </p>
+          <p id="totalNumberClubs"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="section3">
+      <h1>Poem</h1>
+      <div id="canvasID">
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
