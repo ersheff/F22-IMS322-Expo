@@ -1,6 +1,7 @@
 This fall, students in IMS322 A & B designed and built several interactive modules throughout the semester, including custom music players, data visualizations, interactive poems, and more. The individual modules were constructed from scratch using HTML, CSS, vanilla JavaScript, and the [p5 creative coding library](https://p5js.org).  
 
 As a final semester project, students assembled 3-4 of these modules into a single gallery site for exhibition. Click on a student's name below to view their submission. To return to this menu, click on the browser Home button in the toolbar.  
+
 <img src="ff-home.jpg" width="40px">
 
 
