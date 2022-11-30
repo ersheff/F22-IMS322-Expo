@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+  
+#section1 {
+  height: 1100px;
+  background-color: #F7CCEF;
+}
+
+#section2 {
+  height: 600px;
+  background-color: #EE84E1;
+}
+  #section3 {
+  height: 600px;
+  background-color: #F7CCEF;
+    header {   
+justify-content: right;
+    position: sticky;   
+
+    top: 0; 
+
+}
+}
+  body nav{
+    justify-content: right;
+    position: sticky;
+    top: 0;
+}
+</style>
+</head>
+<body>
+
+  
+ <nav>
+
+      <ul>
+           <h1>My Gallery</h1>
+        Leah Stewart</ul>
+  </nav>
+
+  
+
+
+<div class="main" id="section1">
+  <h2>Photo Gallery</h2>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <body>
+  
+<div class="flex-container images">
+  <div class="flex-item">
+    <figure>
+      <img src="images/baby.jpg" 
+           width="230" 
+     height="200" 
+        />
+      <figcaption>A young Virginia opossum.</figcaption>
+    </figure>
+  </div>
+  
+  
+  <div class="flex-item">
+    <figure>
+      <img src="images/australian.jpg" 
+           width="260" 
+     height="200" 
+        />
+      <figcaption>An australian possum.</figcaption>
+    </figure>
+  </div>
+   <div class="flex-item">
+    <figure>
+      <img src="images/squirrel.jpg" 
+           width="230" 
+     height="200" 
+        />
+      <figcaption>Despite it's name, the gliding squirrel is actually a possum.</figcaption>
+    </figure>
+  </div>
+  <div class="flex-item">
+    <figure>
+      <img src="images/Possums1.jpg"
+           width="200" 
+     height="200" 
+        />
+      <figcaption>Two virginia opossums, North America's only marsupial.</figcaption>
+    </figure>
+  </div>
+  <div class="flex-item">
+    <figure>
+      <img src="images/babyx2.jpg" 
+        height="200"
+        width="300"
+        />
+      <figcaption>Opossums are resistant to the rabies virus, and it is very rare to find an opossum affected by rabies.</figcaption>
+    </figure>
+  </div>
+  <div class="flex-item">
+    <figure>
+      <img src="images/sugarglider.jpg"
+        height="230"
+        width="200"
+      />
+      <figcaption>The sugar glider, is in fact, a possum.</figcaption>
+    </figure>
+  </div>
+</div>
+ </p>
+</div>
+
+
+  
+
+<div class="main" id="section2">
+  <a href="#section3">Click Me to Smooth Scroll to Section 3 Below</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<h1>RipNDip (Distinguished Navbar)</h1>
+<nav><ul>
+ <img src="images/ripndip-logo-8.gif" alt="" class="b">
+<li><a href= "ripndipclothing.com">HomePage</a></li>
+<li><a href= "ripndipclothing.com">Skateboards</a></li> 
+    <li> <a href= "ripndipclothing.com">Clothing</a></li>
+        <li> <a href= "ripndipclothing.com">StreetWear</a></li>
+ </ul></nav>
+<body>
+<div class="fade-in">
+   <img src="/images/sk8bord.jpg">
+
+</body>
+
+  </p>
+</div>
+
+
+
+  
+  
+  <div class="main" id="section3">
+  <h2>P5 Poem</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+      <img src="/images/CowWeb.png">
+     <a href="https://project-1-p5-poem-nightingale422.ims322b-miami-fall2022.repl.co/">P5 Poem</a>
+</div>
+
+</body>
+</html>
