@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://use.typekit.net/vry4ckp.css">
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+
+  <main>
+  
+  <aside>
+    <nav>
+      <div class ="navigation">Navigation</div>
+      <a href="#page-1" class = "link">One</a>
+      <a href="#page-2" class = "link">Two</a>
+      <a href="#page-3" class = "link">Three</a>
+    </nav>
+  </aside>
+    
+   
+      <div class="flex-container">
+  
+      <section class = "music">
+      <article id="page-1">
+        <p>Project One</p>
+        <audio id="music-file">
+      <source src="DMSR.mp3" type="audio/mpeg">Your browser does not support the audio element.
+    </audio>
+  
+    <a href="https://prince.com/""><img src="1999.jpeg" alt="1999 Album Cover"></a>
+
+    <section class = stuff>
+  
+      <div class = text>
+        
+        <h1>D.M.S.R.</h1>
+        <h2>Prince</h2>
+      
+      </div>  
+    
+      
+      
+      
+        
+
+      <div class="song-slider">
+    <input type="range" value="0" class="seek-bar">
+     <div id='seconds-counter'> </div>
+
+      </div>
+
+
+              
+        <div class = buttons>  
+          
+          <button id="back-button"><<</button>
+          <button id="play-button">Play</button>
+          <button id="pause-button">Pause</button>
+          <button id="forward-button">>></button>
+          
+        </div>
+ 
+
+
+  </section>  
+    </article>
+    <article id="page-2">
+      <p>Project Two</p>
+<body class = "survey-body">
+  <!-- Questions/Controls. -->
+
+  <!-- DWARVES: Thorin, Balin, Dwalin, Bifur, Bofur, Bombur, Oin, Gloin, Dori, Nori, Ori, Fili, and Kili-->
+  
+  <section class="question-section">
+
+    <input type="text" id="first-name" placeholder="Enter your name">
+
+    <div class = "birthday">
+      <label for="date-selector">Enter your birthday:</label>
+      <input type="date" id="date-selector">
+    </div>
+
+    <fieldset id="dwarf-radio" class="styled-fieldset">
+      
+    <label for="dwarf-radio">Choose your favorite dwarf:</label>
+    <div>
+      <input type="radio" id="thorin" name="fav-dwarf" value="Thorin">
+      <label for="thorin">Thorin</label>
+    </div>
+    <div>
+      <input type="radio" id="balin" name="fav-dwarf" value="Balin">
+      <label for="balin">Balin</label>
+    </div>
+    <div>
+      <input type="radio" id="dwalin" name="fav-dwarf" value="Dwalin">
+      <label for="dwalin">Dwalin</label>
+    </div>
+    <div>
+      <input type="radio" id="bifur" name="fav-dwarf" value="Bifur">
+      <label for="bifur">Bifur</label>
+    </div>
+    <div>
+      <input type="radio" id="bofur" name="fav-dwarf" value="Bofur">
+      <label for="bofur">Bofur</label>
+    </div> 
+    <div>
+      <input type="radio" id="bombur" name="fav-dwarf" value="Bombur">
+      <label for="bombur">Bombur</label>
+    </div>
+    <div>
+      <input type="radio" id="oin" name="fav-dwarf" value="Oin">
+      <label for="oin">Oin</label>
+    </div>
+    <div>
+      <input type="radio" id="gloin" name="fav-dwarf" value="Gloin">
+      <label for="gloin">Gloin</label>
+    </div>
+    <div>
+      <input type="radio" id="dori" name="fav-dwarf" value="Dori">
+      <label for="dori">Dori</label>
+    </div>  
+    <div>
+      <input type="radio" id="nori" name="fav-dwarf" value="Nori">
+      <label for="nori">Nori</label>
+    </div>
+    <div>
+      <input type="radio" id="ori" name="fav-dwarf" value="Ori">
+      <label for="ori">Ori</label>
+    </div>  
+    <div>
+      <input type="radio" id="fili" name="fav-dwarf" value="Fili">
+      <label for="fili">Fili</label>
+    </div>
+    <div>
+      <input type="radio" id="kili" name="fav-dwarf" value="Kili">
+      <label for="kili">Kili</label>
+    </div> 
+
+  </fieldset>    
+
+    <div>
+    <label for="race-select">Choose a Middle-Eath race:</label>
+    <select name="races" id="race-select">
+      <option value="">- Choose an option -</option>
+      <option value="Elf">Elf</option>
+      <option value="Man">Man</option>
+      <option value="Dwarf">Dwarf</option>
+      <option value="Orc">Orc</option>
+      <option value="Hobbit">Hobbit</option>
+      <option value="Ent">Ent</option>
+      <option value="Troll">Troll</option>
+      <option value="Spirit of the Valar">Spirit of the Valar</option>
+    </select>
+  </div>  
+
+
+  <fieldset id="movie-radio" class="styled-fieldset">
+      
+    <label for="movie-radio">Choose your favorite movie:</label>
+    <div>
+      <input type="radio" id="unexpected" name="fav-movie" value = "An Unexpected Journey">
+      <label for="unexpected">An Unexpected Journey</label>
+    </div>
+    <div>
+      <input type="radio" id="desolation" name="fav-movie" value = "The Desolation of Smaug">
+      <label for="desolation">The Desolation of Smaug</label>
+    </div>
+    <div>
+      <input type="radio" id="five-armies" name="fav-movie" value = "The Battle of Five Armies" >
+      <label for="five-armies">The Battle of Five Armies</label>
+    </div>
+     <div>
+      <input type="radio" id="all" name="fav-movie" value = "All of Them">
+      <label for="all">All of them</label>
+    </div>
+     <div>
+      <input type="radio" id="lotr" name="fav-movie" value = "Lord of The Rings is better.">
+      <label for="lotr">Lord of The Rings is better.</label>
+    </div>
+ 
+  
+
+  </fieldset>  
+
+       <button type="button" onclick="movieOutput();favDwarfOutput();firstNameOutput();birthdayOutput();raceOutput()">
+        Submit
+    </button>
+
+    <div id="name-output"></div>
+    <div id="birthday-output"></div>
+    <div id="race-output"></div>
+   
+    <div id="result-dwarf"></div>
+    
+    <div id="result"></div>
+  
+    
+  
+    
+  </section>
+
+  
+
+  <!-- Bio Section (to be populated with answers from the questionairre. -->
+  <section class="bio-section">
+    
+    <img src="smaug.png" class = "smaug" alt="Smaug">
+   
+
+  </section>
+
+</body>
+    </article>
+    <article id="page-3">
+      <p>Project Three</p>
+ 
+
+<div id = "square"></div>      
+    </article>
+  </section>
+  
+  </div>
+
+  </main>
+</body>
+
+</html>

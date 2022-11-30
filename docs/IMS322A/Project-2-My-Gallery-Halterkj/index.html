@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style2.css" rel="stylesheet" type="text/css" />
+  <link href="style3.css" rel="stylesheet" type="text/css" />
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+  <script defer src="https://unpkg.com/p5.collide2d"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Architects+Daughter" />
+</head>
+<body>
+
+  <div id="sticky">
+  <header>
+    <img src="butterflyweed.png" class="flower-icon"><h1 id="my-header">Kylee Halter IMS 322 Gallery</h1><img src="butterflyweed.png" class="flower-icon">
+  </header>
+  
+<nav>
+  <button class="active-button" id="photo-tab">Photo Gallery</button>
+  <button id="question-tab">Questionnaire</button>
+  <button id="poem-tab">Poem</button>
+</nav>
+  </div>
+  
+<main>
+  <div class="content" id="photo-gallery">
+    <div class="flex-header">
+    <img src="butterflyweed.png" class="mini-flower"><h2>Gallery of Orange and Olive</h2><img src="butterflyweed.png" class="mini-flower">
+    </div>
+<div class="vertical-gap">
+  <div class="photo-groups">
+   <div class="photo-caption">
+      <img src="butterflywbg.png" alt="Monarch butterfly drawing over a brown background" class="gallery-size">
+      <p>Orange as this monarch butterfly</p>
+      </div>
+    
+    <div class="photo-caption">
+      <img src="catwbg.png" alt="Orange cat drawing over a brown background" class="gallery-size">
+      <p>Orange as this chicken-nugget cat</p>
+      </div>
+    
+    <div class="photo-caption">
+      <img src="flowerwbg.png" alt="Orange flower drawing over a brown background" class="gallery-size">
+      <p>Orange as this butterflyweed blossom</p>
+      </div>
+  </div>
+    
+  <div class="photo-groups">
+    <div class="photo-caption">
+      <img src="pumpkinwbg.png" alt="Pumpkin drawing over a brown background" class="gallery-size">
+      <p>Orange and olive as this pumpkin with its vine</p>
+      </div>
+    
+    <div class="photo-caption">
+      <img src="grasswbg.png" alt="Grass drawing over a brown background" class="gallery-size">
+      <p>Olive as this grass</p>
+      </div>
+    
+    <div class="photo-caption">
+      <img src="treewbg.png" alt="Tree drawing over a brown background" class="gallery-size">
+      <p>Orange and olive as this tree</p>
+      </div>
+  </div>
+</div>
+  </div>
+  
+  
+  
+  
+  
+  
+<div id="questionnaire" class="no-content">
+<div class="questionnaire-content">
+    <section class="bio-section">
+      <h2>Disney Enthusiasts Questionnaire Profile</h2>
+      <div class="pfp-and-name">
+        <img src="disney-icon.png" class="pfp">
+        <div>
+          <p class="fluff">My Name:</p>
+          <p id="name-output" class="output"></p>
+          <p class="fluff">My Birthday:</p>
+          <p id="date-output" class="output"></p>
+          <p class="fluff">My Favorite Disney Movie:</p>
+          <p id="movie-output" class="output"></p>
+          <p class="fluff">My Favorite Disney Animals:</p>
+        <p id="results" class="output"></p>
+        <p class="fluff">Status:</p>
+        <p id="status-output" class="output"></p>
+        </div>
+      </div>
+    </section>
+    <section class="questions-section">
+      <fieldset>
+      <p>What's Your Name?</p>
+      <input type="text" placeholder="Enter your name" id="my-name">
+        </fieldset>
+      <fieldset>
+      <p>What's Your Birthday?</p>
+        <input type="date" id="my-date">
+      </fieldset>
+      <fieldset>
+        <label for="my-movie">Select Your Favorite Disney Movie:</label>
+        <select id="my-movie">
+            <option value="">- Choose an option -</option>
+            <option value="The Lion King">The Lion King</option>
+            <option value="The Little Mermaid">The Little Mermaid</option>
+            <option value="Sleeping Beauty">Sleeping Beauty</option>
+            <option value="Snow White">Snow White</option>
+            <option value="Beauty and the Beast">Beauty and the Beast</option>
+            <option value="Lilo and Stitch">Lilo and Stitch</option>
+            <option value="Cinderella">Cinderella</option>
+            <option value="Pinocchio">Pinocchio</option>
+            <option value="Bambi">Bambi</option>
+            <option value="Dumbo">Dumbo</option>
+            <option value="Fantasia">Fantasia</option>
+            <option value="Alice in Wonderland">Alice in Wonderland</option>
+            <option value="Mulan">Mulan</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Tangled">Tangled</option>
+        </select>
+      </fieldset>
+      <fieldset>
+    <label>Who Are Your Favorite Disney Animals?</label>
+    <div class="checkflex">
+        <div>
+      <input type="checkbox" id="shenzi" name="shenzi" class="customcheck">
+      <label for="shenzi">Shenzi</label>
+    </div>
+    <div>
+      <input type="checkbox" id="sebastian" name="sebastian" class="customcheck">
+      <label for="sebastian">Sebastian</label>
+    </div>
+      <div>
+      <input type="checkbox" id="sven" name="sven" class="customcheck">
+      <label for="sven">Sven</label>
+    </div>
+    </div>
+    <div class="checkflex">
+    <div>
+      <input type="checkbox" id="banzai" name="banzai" class="customcheck">
+      <label for="banzai">Banzai</label>
+    </div>
+    <div>
+      <input type="checkbox" id="pip" name="pip" class="customcheck">
+      <label for="pip">Pip</label>
+    </div>
+   </div>
+     <div class="checkflex">
+    <div>
+      <input type="checkbox" id="stitch" name="stitch" class="customcheck">
+      <label for="stitch">Stitch</label>
+    </div>
+     <div>
+      <input type="checkbox" id="bambi" name="bambi" class="customcheck">
+      <label for="bambi">Bambi</label>
+    </div>
+    </div>
+    <div class="checkflex">
+     <div>
+      <input type="checkbox" id="mushu" name="mushu" class="customcheck">
+      <label for="mushu">Mushu</label>
+    </div>
+     <div>
+      <input type="checkbox" id="pascal" name="pascal" class="customcheck">
+      <label for="pascal">Pascal</label>
+    </div>
+      </div>
+  </fieldset>
+<!-- Radio Button -->
+    <fieldset id="status-radio">
+      <label for="status-radio">What Is Your Current Watch Status?</label>
+  <div>
+<input type="radio" id="watching" value="Watching A Disney Movie" name="status" class="customradio">
+    <label for="watching">Watching A Disney Movie</label>
+  </div>
+  <div>
+    <input type="radio" id="will" value="Going To Watch A Disney Movie" name="status" class="customradio">
+    <label for="will">Going To Watch A Disney Movie</label>
+  </div>
+  <div>
+    <input type="radio" id="just" value="Just Watched A Disney Movie" name="status" class="customradio">
+    <label for="just">Just Watched A Disney Movie</label>
+  </div>
+</fieldset>
+      <button id="submit">Submit</button>
+    </section>
+  </div>
+</div>
+
+  </div>
+    <div id="poem" class="no-content">
+  </div>
+</main>
+</body>
+
+</html>

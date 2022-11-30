@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style-gallery.css" rel="stylesheet" type="text/css" />
+  <script src="script2.js" defer></script>
+  <script src="p5.min.js"></script>
+  <link href="style-musicplayer.css" rel="stylesheet" type="text/css" />
+  <script src="script-musicplayer.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oleo+Script&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div>
+  <h1 id="page-0" class="valerie-do">Valerie Do</h1>
+  
+  <nav>
+    <div class="nav-child">
+      <a href="#page-0">Home</a>
+    </div>
+    <div class="nav-child">
+      <a href="#page-1">Photo Gallery</a>
+    </div>
+    <div class="nav-child">
+      <a href="#page-2">Music Player</a>
+    </div>
+    <div class="nav-child">
+      <a href="#page-3">P5 Poem</a>
+    </div>
+  </nav>
+
+  <main>
+    <section id="page-1">
+      <p class="p-title">Photo Gallery</p>
+      <div class="flex-container1">
+   
+       <div class="flex1">
+         <img class="galleryimg" src="apartment.jpg" alt="apartment">
+         <p>Apartment</p>
+       </div>
+    
+       <div class="flex2">
+         <img class="galleryimg" src="bestrong.jpg" alt="be trong sign">
+         <p>"Be strong"</p>
+       </div>
+    
+       <div class="flex3">
+         <img class="galleryimg" src="flowers.jpg">
+         <p>Flowers</p>
+       </div>
+    </div>
+
+  <div class="flex-container2">
+   
+   <div class="flex1">
+     <img class="galleryimg" src="donut.jpg" alt="donut">
+     <p>Donuts</p>
+   </div>
+
+   <div class="flex2">
+     <img class="galleryimg" src="silk.jpg">
+     <p>Silk</p>
+   </div>
+
+   <div class="flex3">
+     <img class="galleryimg" src="pinkvibesonly.jpg">
+     <p>Pink vibes only</p>
+   </div>
+   
+ </div>
+
+      
+    </section>
+    <section id="page-2">
+      <p class="p-title">Music Player</p>
+      <div class="cd-player">
+    <div class="title">
+      <h1>Feel My Rhythm</h1>
+    </div>
+    
+    <div class="artist">
+      <h2>Red Velvet</h2>
+    </div>
+
+    <div id="slidercontainer">
+        <input min="0" max="100" value="0" type="range" id="slider">
+    </div>
+    
+    <div id="cd">
+      <a href="https://open.spotify.com/artist/1z4g3DjTBBZKhvAroFlhOM">
+        <img class="logoimg" src="redvelvet.png" alt=""></a>
+    </div>
+
+    <div class="flex-container">
+        <p id="timeoutput">0:00</p>
+        <div id="slidercontainer1">
+          <input min="0" max="224" value="0" type="range" id="slider1">
+        </div>
+        
+        <button id="play-button">
+          <div class="play">
+            <img src="playbutton.png" alt="">
+          </div>
+        </button>
+
+    
+  </div>
+
+  <!-- This element loads the audio file - it will not actually be visible in the browser. -->
+  <audio id="music-file">
+    <source src="feelmyrhythm.m4a" type="audio/mpeg">Your browser does not support the audio element.
+  </audio>
+    </section>
+    
+    <section id="page-3">
+      <p class="p-title">P5 Poem</p>
+      <div id="sketch-parent">
+        <div id="sketch-holder">
+        </div>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+  
+  
+
+</body>
+
+</html>

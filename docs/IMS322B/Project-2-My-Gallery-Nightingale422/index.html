@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+<style>
+  
+#section1 {
+  height: 600px;
+  background-color: #F64EC5;
+}
+
+#section2 {
+  height: 600px;
+  background-color: #EE84E1;
+}
+  #section3 {
+  height: 600px;
+  background-color: #F7CCEF;
+    header {   
+justify-content: right;
+    position: sticky;   
+
+    top: 0; 
+
+}
+}
+  body nav{
+    justify-content: right;
+    position: sticky;
+    top: 0;
+}
+</style>
+</head>
+<body>
+
+  
+ <nav>
+
+      <ul>
+           <h1>My Gallery</h1>
+        Leah Stewart</ul>
+  </nav>
+
+  
+
+
+<div class="main" id="section1">
+  <h2>Photo Gallery</h2>
+  <a href="#section2">Click Me to Smooth Scroll to Section 2 Below</a>
+  <p>
+   <img src="images/PossumWeb.png"
+     width="400" 
+     height="300" 
+  </p>
+ <p><a href="https://week-2-responsive-photo-gallery-nightingale422.ims322b-miami-fall2022.repl.co/">Photo Gallery</a>
+ </p>
+</div>
+
+
+  
+
+<div class="main" id="section2">
+  <h2>Profile Questionnaire</h2>
+  <a href="#section3">Click Me to Smooth Scroll to Section 3 Below</a>
+  <p>
+     <img src="images/MushroomWeb.png"
+     width="400" 
+     height="300"
+  </p>
+  <p><a href="https://week-6-profile-questionnaire-nightingale422.ims322b-miami-fall2022.repl.co/">Profile Questionaire</a>
+  </p>
+</div>
+
+
+
+  
+  
+  <div class="main" id="section3">
+  <h2>P5 Poem</h2>
+  <a href="#section1">Click Me to Smooth Scroll to Section 1 Above</a>
+    <p>
+    <img src="images/CowWeb.png"
+     width="400" 
+     height="300"
+    <p>
+     <p> <a href="https://project-1-p5-poem-nightingale422.ims322b-miami-fall2022.repl.co/">P5 </a></p>
+</div>
+
+</body>
+</html>

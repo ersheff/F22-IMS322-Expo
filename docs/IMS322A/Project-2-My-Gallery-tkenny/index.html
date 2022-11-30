@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="photo-site/photo.css" rel="stylesheet" type="text/css" />
+  <link href="profile-site/profile.css" rel="stylesheet" type="text/css" />
+  <link href="carousel-site/carousel.css" rel="stylesheet" type="text/css" />
+  <script src="profile-site/profile.js" defer></script>
+  <script src="carousel-site/carousel.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <nav id="top-nav">
+      <img id="logo" src="logo.png">
+      <button id="photo-button"><a href="#photo">Photo Gallery</a></button>
+      <button id="profile-button"><a href="#profile">Profile Questionnare</a></button>
+      <button id="carousel-button"><a href="#carousel">DIY Carousel</a></button>
+    </nav>
+    <section class="main-section" id="photo">
+
+      <body class="coffee-background">
+        <h1 class="photo-h1">Different Types of Coffee</h1>
+        <section class="flex-row">
+          <div class="image-container-1">
+            <div class="caption-1">
+              <img class="espresso" src="photo-site/images/espresso.jpg" alt="espresso ">
+              <p>Espresso Shot</p>
+            </div>
+            <div class="caption-2">
+              <img class="espresso" src="photo-site/images/icedcoffee.jpg" alt="espresso ">
+              <p>Iced Coffee</p>
+            </div>
+          </div>
+          <div class="image-container-2">
+            <div class="caption-3">
+              <img class="espresso" src="photo-site/images/french-press.jpg" alt="espresso ">
+              <p>French Press</p>
+            </div>
+          </div>
+          <div class="image-container-3">
+            <div class="caption-4">
+              <img class="espresso" src="photo-site/images/affogato.jpg" alt="espresso ">
+              <p>Affogato</p>
+            </div>
+            <div class="caption-5">
+              <img class="espresso" src="photo-site/images/drip.jpg" alt="espresso ">
+              <p>Drip Coffee</p>
+            </div>
+          </div>
+          <div class="image-container-4">
+            <div class="caption-6">
+              <img class="espresso" src="photo-site/images/latte.jpg" alt="espresso ">
+              <p>Latte</p>
+            </div>
+        </section>
+
+      </body>
+    </section>
+    <section class="main-section" id="profile">
+
+      <body>
+        <article>
+          <div class="coffee-class">
+            <h1>Coffee Connoisseurs</h1>
+            <img id="coffee-pic" src="profile-site/coffeeedit.jpg" />
+          </div>
+
+          <!-- Questions/Controls -->
+
+          <section class="question-section">
+
+            <div class="name-and-bday">
+              <div>
+                <label id="names">Name:</label>
+                <input type="text" id="name">
+              </div>
+
+              <div>
+                <label for="date-selectors">Enter your birthday:</label>
+                <input type="date" id="date-selector">
+              </div>
+            </div>
+
+            <div class="favorite-coffee">
+              <label id="favorites">Favorite Coffee Shop:</label>
+              <input type="text" id="favorite">
+            </div>
+
+            <div class="clickers">
+              <fieldset id="fav-drink">
+                <label for="fav-drink">Favorite coffee drink(s):</label>
+                <div>
+                  <input type="checkbox" id="latte" name="latte">
+                  <label for="latte">Latte</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="cap" name="cap">
+                  <label for="cap">Cappachino</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="iced" name="iced">
+                  <label for="iced">Iced Coffee</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="espresso" name="espresso">
+                  <label for="espresso">Espresso Shot</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="drip" name="drip">
+                  <label for="drip">Drip Coffee</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="americano" name="americano">
+                  <label for="americano">Americano</label>
+                </div>
+              </fieldset>
+
+              <fieldset id="where-at">
+                <label for="where-at">Where do you prefer to get yout daily coffee from?</label>
+                <div>
+                  <input type="radio" name="where" value="Home" id="home" />
+                  <label for="home">Make it at home</label>
+                </div>
+                <div>
+                  <input type="radio" name="where" value="A café" id="cafe" />
+                  <label for="cafe">Get it from a cafe</label>
+                </div>
+                <div>
+                  <input type="radio" name="where" value="Either home or a café" id="both" />
+                  <label for="both">Both</label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="num-cups-day">
+              <label for="cups-per-day">Number of cups per day:</label>
+              <select name="cups-per-day" id="cups-per-day">
+                <option value=" ">(choose a number)</option>
+                <option value="One">1</option>
+                <option value="Two">2</option>
+                <option value="Three">3</option>
+                <option value="Four">4</option>
+                <option value="Five or more">5+</option>
+              </select>
+            </div>
+
+            <button id="submit">Submit</button>
+
+          </section>
+
+          <!-- Bio Section (to be populated with answers from the questionairre. -->
+          <section class="bio-section">
+            <p id="name-field">Name:</p>
+            <p id="shop-field">Favorite coffee shop:</p>
+            <p id="bio-favorite">Favorite coffee drink(s):</p>
+            <p id="home-vs-cafe">Prefers coffee from:</p>
+            <p id="cup-number">Cups per day:</p>
+          </section>
+        </article>
+      </body>
+    </section>
+    <section class="main-section" id="carousel">
+
+      <body>
+        <section class="carousel-container" id="carousel-container">
+          <article class="carousel-section" id="city-img">
+            <h1 class="sunset-h1">City Sunset</h1>
+            <img class="sunset-image" src="carousel-site/city.jpg" />
+          </article>
+          <article class="carousel-section inactive" id="mountain-img">
+            <h1 class="sunset-h1">Mountain Sunset</h1>
+            <img class="sunset-image" src="carousel-site/mountain.jpg" />
+          </article>
+          <article class="carousel-section inactive" id="beach-img">
+            <h1 class="sunset-h1">Beach Sunset</h1>
+            <img class="sunset-image" src="carousel-site/beach.jpg" />
+          </article>
+        </section>
+
+        <footer>
+          <button class="slide-arrow" id="slide-arrow-prev">&#8249;</button>
+          <button class="indicator" id="slide-1">1</button>
+          <button class="indicator" id="slide-2">2</button>
+          <button class="indicator" id="slide-3">3</button>
+          <button class="slide-arrow" id="slide-arrow-next">&#8250;</button>
+        </footer>
+      </body>
+    </section>
+  </main>
+</body>
+
+</html>

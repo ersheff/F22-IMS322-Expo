@@ -1,0 +1,254 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  background-color: black;
+}
+
+button {
+  font-size: 1.3rem;
+  width: 12ch;
+  border-radius: 5px 5px 0px 0px;
+  border: none;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: purple;
+}
+
+.active-button {
+  background-color: white;
+}
+
+.active-button:hover {
+  background-color: yellow;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: .5rem;
+  font-size: 3.5rem;
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+
+img {
+  width: 100%;
+}
+
+.flex-row {
+  display: flex;
+  gap: 1ch;
+  width: 100%;
+}
+
+
+.image-container {
+  height: 100%;
+  background-color: #9edb9e;
+  padding: 1ch;
+}
+
+.caption {
+  padding: .5ch;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  text-align: center;
+}
+
+.header {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: larger;
+  text-align: center;
+}
+
+#back-button{
+  color: gray;
+  font: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-container2 {
+  width: 100%;
+  background-color: white;
+  padding: 1ch;
+}
+
+.caption {
+  padding: .5ch;
+  color: gray;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  text-align: left;
+}
+
+#play-button{
+  color: gray;
+  font: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#pause-button{
+  color: gray;
+  font: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#ahead-button{
+  color: gray;
+  font: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#current-time{
+  font: x-large;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+
+
+.alabamashakescover {
+  transition: 2s;
+  text-decoration: none;
+}
+
+.hover {
+  transition: 2s;
+  transition: 2s;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: medium;
+}
+
+a:link {
+  color: purple;
+}
+
+a:hover {
+  background-color: purple;
+}
+
+.flex-box {
+  display: flex;
+  align-items: left;
+  background-color: pink;
+}
+
+.dogBar {
+  margin-top: 75px;
+  width: 80px;
+  background-color: #ae6c32;
+}
+
+.dogBar2 {
+  font-size: larger;
+   text-align: center;
+}
+
+.catBar {
+  margin-top: 155px;
+  width: 80px;
+  background-color: purple;
+}
+
+.catBar2 {
+  font-size: larger;
+   text-align: center;
+}
+
+.birdBar {
+  margin-top: 240px;
+  width: 80px;
+  background-color: lightblue;
+}
+
+.birdBar2 {
+  font-size: larger;
+  text-align: center;
+}
+
+.fishBar {
+  margin-top: auto;
+  width: 80px;
+  background-color: orange;
+}
+
+.fishBar2 {
+  font-size: larger;
+   text-align: center;
+}
+
+.rabbitsBar {
+  margin-top: 210px;
+  width: 80px;
+  background-color: gray;
+}
+
+.rabbitsBar2 {
+  font-size: larger;
+   text-align: center;
+}
+
+.reptileBar {
+  margin-top: 200px;
+  width: 80px;
+  background-color: green;
+}
+
+.reptileBar2 {
+  font-size: larger;
+   text-align: center;
+}
+
+.otherBar {
+  margin-top: 200px;
+  width: 80px;
+  background-color: red;
+}
+
+.otherBar2 {
+  font-size: larger;
+   text-align: center;
+}
+
+
+
+@media (max-width: 360px) {
+  .flex-row {
+    flex-direction: column;
+  }
+   .flex-container {
+  flex-direction: column;
+  }
+  .img-container2{
+    flex-direction: column;
+  }
+}
+
+

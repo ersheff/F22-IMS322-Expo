@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div id = "navigation">
+    <div id = "buttons">
+  <button class = "active-button" id ="first-button">Data Viz</button>
+  <button id ="second-button">Responsive Photo Gallery</button>
+  <button id ="third-button">Profile Questionnaire</button>
+  </div>
+  <p id = "caden">Caden Hune</p>
+  </div>
+
+  <!-- A suggestion for organizing your carousel: -->
+  
+  <div class="carousel-container">
+    
+    <ul>
+    
+    <li class = "slide active" id = "slide1">
+  <h1>
+    Data Viz
+  </h1>
+  <h2 id = "average-distance">
+    The average distance traveled is: 
+  </h2>
+
+  <h2 id = "total-distance">
+    The total distance traveled is:
+  </h2>
+
+  <section id = "data">
+
+<script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+<script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+
+<div id="container"></div>
+
+    <div id = "list">
+  <h3 id = "total-dogs">
+    The total number of dogs is:
+  </h3>
+
+  <h3 id = "total-cats">
+    The total number of cats is:
+  </h3>
+
+  <h3 id = "total-birds">
+    The total number of birds is:
+  </h3>
+  
+  <h3 id = "total-fish">
+    The total number of fish is:
+  </h3>
+
+  <h3 id = "total-rabbits">
+    The total number of rabbits is:
+  </h3>
+
+  <h3 id = "total-reptiles">
+    The total number of reptiles is:
+  </h3>
+
+  <h3 id = "total-other">
+    The total number of other is:
+  </h3>
+  
+  </div>
+  </section>
+
+    </li>
+
+      <li class = "slide" id = "slide2">
+     <h1>
+    Responsive Photo Gallery
+  </h1>
+  
+  <div class="parent2">
+    <div class="image-container">
+      <img class="img2" src="Wall1.jpg" alt="First Image">
+      <p class="caption">A person standing in front of a portal.</p>
+    </div>
+    <div class="image-container">
+      <img class="img2" src="images/Wall2.jpg" alt="First Image">
+      <p class="caption">A futuristic city at night.</p>
+    </div>
+  </div>  
+
+  <div class="parent2">
+    <div class="image-container">
+      <img class="img2" src="images/Wall3.jpg" alt="First Image">
+      <p class="caption">I mean...just look at this. Tell me it's not cool.</p>
+    </div>
+    <div class="image-container">
+      <img class="img2" src="images/Wall4.jpg" alt="First Image">
+      <p class="caption">I'm pretty sure this is a cool astroid or something.</p>
+    </div>
+  </div>
+
+  <div class="parent2">
+    <div class="image-container">
+      <img class="img2" src="images/Wall5.jpg" alt="First Image">
+      <p class="caption">I really wouldn't want to be in this situation.</p>
+    </div>
+    <div class="image-container">
+      <img class="img2" src="images/Wall6.jpg" alt="First Image">
+      <p class="caption">Wowee look at this one. I genuinely have no clue what it is.</p>
+    </div>
+  </div>
+    </li>
+
+    <li class = "slide" id = "slide3">
+  <h1>
+    Profile Questionnaire
+  </h1>
+ <div id = "bio">
+  <img>
+  <img src="Profile.png" id="profile-image">
+  </img>
+  
+  <!-- Bio Section (to be populated with answers from the questionairre. -->
+  <section class="bio-section">
+
+  <p id="name-result">My name is:</p>
+  <p id="date-result">I was born on:</p>
+  <p id="level-result">My producing level is:</p>
+  <p id="daw-result">The DAW(s) I use are:</p>
+  <p id="about-result">My alias is:</p> 
+
+  </section>
+  </div>
+
+  <!-- Questions/Controls -->
+  <section class="question-section">
+    <br>
+    <p>
+      What is your first and last name?
+    </p>
+    <input id="first-last-name" placeholder="Enter your first and last name">
+    <br>
+    <br>
+        <p>
+      When were you born?
+    </p>
+      <input id="birthday" placeholder="DD/MM/YYYY">
+    <br>
+    <br>
+    <p>
+      At what producing level would you place yourself?
+    </p>
+  <select name="Level" id="select-level">
+    <option value="Beginner">Beginner</option>
+    <option value="Intermediate">Intermediate</option>
+    <option value="Advanced">Advanced</option>
+    <option value="Professional">Professional</option>
+</select>
+    <br>
+    <br>
+    <p>
+    What DAW(s) are you proficient in?
+    </p>
+      <fieldset id="daw-options">
+    <div>
+      <input type="checkbox" id="flstudio" name="flstudio">
+      <label for="flstudio">FL Studio</label>
+    </div>
+    <div>
+      <input type="checkbox" id="ableton" name="ableton">
+      <label for="ableton">Ableton Live</label>
+    </div>
+    <div>
+      <input type="checkbox" id="logic" name="logic">
+      <label for="logic">Logic Pro</label>
+    </div>
+    <div>
+      <input type="checkbox" id="protools" name="protools">
+      <label for="protools">Pro Tools</label>
+    </div>
+    <div>
+    <input type="checkbox" id="other" name="other">
+    <label for="other">Other</label>
+    </div>
+  </fieldset>
+    <br>
+<p>
+  What is your producer alias?.
+</p>
+    <input id="about-me" placeholder="Insert your producer name">
+<br>
+<br>
+  <button id="submit-button">Submit</button>
+  </section>
+  <br>
+  <br>
+  <br>
+
+    </li>
+
+  </ul>
+  
+  </div>
+
+    
+</body>
+
+</html>

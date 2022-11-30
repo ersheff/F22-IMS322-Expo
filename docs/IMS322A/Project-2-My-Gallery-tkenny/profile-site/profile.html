@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Week 6: Profile Questionnaire</title>
+  <link href="profile.css" rel="stylesheet" type="text/css" />
+  <script src="profile.js" defer></script>
+</head>
+
+<body>
+  <article>
+    <div class="coffee-class">
+      <h1>Coffee Connoisseurs</h1>
+      <img id="coffeecup" src="coffeeedit.jpg" />
+    </div>
+
+    <!-- Questions/Controls -->
+
+    <section class="question-section">
+
+      <div class="name-and-bday">
+        <div>
+          <label id="names">Name:</label>
+          <input type="text" id="name">
+        </div>
+
+        <div>
+          <label for="date-selectors">Enter your birthday:</label>
+          <input type="date" id="date-selector">
+        </div>
+      </div>
+
+      <div class="favorite-coffee">
+        <label id="favorites">Favorite Coffee Shop:</label>
+        <input type="text" id="favorite">
+      </div>
+
+      <div class="clickers">
+        <fieldset id="fav-drink">
+          <label for="fav-drink">Favorite coffee drink(s):</label>
+          <div>
+            <input type="checkbox" id="latte" name="latte">
+            <label for="latte">Latte</label>
+          </div>
+          <div>
+            <input type="checkbox" id="cap" name="cap">
+            <label for="cap">Cappachino</label>
+          </div>
+          <div>
+            <input type="checkbox" id="iced" name="iced">
+            <label for="iced">Iced Coffee</label>
+          </div>
+          <div>
+            <input type="checkbox" id="espresso" name="espresso">
+            <label for="espresso">Espresso Shot</label>
+          </div>
+          <div>
+            <input type="checkbox" id="drip" name="drip">
+            <label for="drip">Drip Coffee</label>
+          </div>
+          <div>
+            <input type="checkbox" id="americano" name="americano">
+            <label for="americano">Americano</label>
+          </div>
+        </fieldset>
+
+        <fieldset id="where-at">
+          <label for="where-at">Where do you prefer to get yout daily coffee from?</label>
+          <div>
+            <input type="radio" name="where" value="Home" id="home" />
+            <label for="home">Make it at home</label>
+          </div>
+          <div>
+            <input type="radio" name="where" value="A café" id="cafe" />
+            <label for="cafe">Get it from a cafe</label>
+          </div>
+          <div>
+            <input type="radio" name="where" value="Either home or a café" id="both" />
+            <label for="both">Both</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="num-cups-day">
+        <label for="cups-per-day">Number of cups per day:</label>
+        <select name="cups-per-day" id="cups-per-day">
+          <option value=" ">(choose a number)</option>
+          <option value="One">1</option>
+          <option value="Two">2</option>
+          <option value="Three">3</option>
+          <option value="Four">4</option>
+          <option value="Five or more">5+</option>
+        </select>
+      </div>
+
+      <button id="submit">Submit</button>
+
+    </section>
+
+    <!-- Bio Section (to be populated with answers from the questionairre. -->
+    <section class="bio-section">
+      <p id="name-field">Name:</p>
+      <p id="shop-field">Favorite coffee shop:</p>
+      <p id="bio-favorite">Favorite coffee drink(s):</p>
+      <p id="home-vs-cafe">Prefers coffee from:</p>
+      <p id="cup-number">Cups per day:</p>
+    </section>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+nav {
+  display: flex;
+  background-color: chartreuse;
+  padding: 0.5rem;
+  gap: 2ch;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 300%;
+}
+
+.section {
+  height: 100%;
+}
+
+.p {
+  font-size: 4rem;
+  justify-content: center;
+}
+
+
+
+
+p.question-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+}
+
+p.bday {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+}
+
+p.lizard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+}
+
+p.food {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+}
+
+p.name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+}
+
+
+
+
+img {
+  width: 310px;
+  height: 310px;
+}
+
+
+
+.flex-row {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+  
+}
+
+.flex-row2 {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  padding: 2ch;
+  align-items: start;
+  justify-content: center;
+  
+}
+
+p {
+  color: black;
+  font-family: "courier-new";
+  text-align: center;
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: 16px;
+  width: 280px;
+}
+
+
+
+
+p.flex-container {
+  display: flex;
+  gap: var(--p);
+  padding: 2ch;
+  animation-name: my-animation;
+  animation-duration: 1s;
+}
+
+p.flex-container2 {
+  display: flex;
+  gap: var(--p);
+  padding: 2ch;
+    position: absolute;
+
+   right: 0;
+    top:0;
+  width: 50px;
+  height: 50px;
+}
+
+
+a {
+  transition: 2s;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--green);
+}
+
+a:link {
+  color: var(--d-grey);
+}
+
+a:visited {
+  color: var(--d-grey);
+}
+
+@keyframes my-animation {
+  from { margin-left: -20px; }
+  to { margin-left: 0; }
+}
+
+/* Currently set to the width of an iPhone 13 display - feel free to adjust as needed */
+@media (max-width: 390px) {
+}
+
+p.img {
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Do not use this specific image width in your gallery! This width was only set so that the full image was visible when first opening the assignment. */
+
+img {
+  width: 100%;
+}
+
+
+.flex-row{
+  display: flex;
+  gap: 2ch;
+  align-items: center;
+  width: 100%;
+  background-color: lightblue;
+  padding: 1ch;
+  border: 1px solid black; 
+}
+
+.flex-row2{display: flex;
+         gap: 2ch;
+         align-items: center;
+          width: 100%;
+          background-color: lightblue;
+          padding: 1ch;
+          border: 1px solid black;}
+
+.caption {color: blue;
+         width: 100%; 
+         text-align: center;
+         border: 1px solid black;}
+
+@media (max-width: 600px) {
+  .flex-row, .flex-row2 {
+    flex-direction: column;
+  }
+}

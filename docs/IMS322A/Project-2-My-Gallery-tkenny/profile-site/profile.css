@@ -1,0 +1,105 @@
+
+article{
+  height: auto;
+  margin: auto;
+  position: inline-block;
+  font-family: Didot, serif;
+  padding: 2rem;
+}
+
+
+.coffee-class{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+h1{
+  font-size: 3rem;
+  font-family: Didot, serif;
+}
+
+
+#coffee-pic{
+  width: 20%;
+  max-width: 20rem;
+  height: auto;
+}
+
+.name-and-bday{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  gap: 2ch;
+}
+
+.favorite-coffee{
+  margin: 10px 0 20px 20px;
+}
+
+fieldset{
+  border: none;
+}
+
+.clickers{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  border: none;
+}
+
+.num-cups-day{
+  margin: 20px;
+}
+
+button{
+margin: auto 20px auto 20px;
+text-align: center;
+}
+
+.bio-section{
+  background-color: white;
+  border: 1px solid black;
+  margin: 20px;
+  padding-left: 10px;
+}
+
+@media (max-width: 700px) {
+  h1{
+    font-size: 2rem;
+  }
+
+  #coffee-pic{
+    width: 20%;
+    max-width: 20rem;
+    height: auto;
+  }
+  
+  .coffee-class{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .name-and-bday{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2ch;
+  }
+
+  .favorite-coffee {
+  margin: 10px 0 20px 20px;
+  }
+  
+  .clickers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3ch;
+    border: none;
+  }
+}

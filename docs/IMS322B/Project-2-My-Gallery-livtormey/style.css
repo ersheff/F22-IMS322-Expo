@@ -1,0 +1,64 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  background-color: black;
+  color: #dbdbdb;
+  padding: 1rem;
+}
+
+nav {
+  background-color: black;
+}
+
+button {
+  font-size: 2rem;
+  width: 21ch;
+  border-radius: 5px 5px 0px 0px;
+  border: none;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: #d9d9d9;
+}
+
+.active-button {
+  background-color: #d1a1e8;
+}
+
+.active-button:hover {
+  background-color: #ecb6d0;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: #94aff0;
+  padding: 1rem;
+  font-size: 4rem;
+  display: none;
+}
+
+.active-section {
+  display: block;
+}
+
+
+iframe {
+  align-self: center;
+  margin: 50px;
+  width: 80%;
+  height: 400px;
+}

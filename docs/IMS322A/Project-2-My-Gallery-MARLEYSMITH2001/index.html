@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+   <script src="https://kit.fontawesome.com/653660c0be.js"crossorgin="anonymous"></script>
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+<p> Pink aesthetic </p>
+  <!-- A suggestion for organizing your carousel: -->
+  <div class="slider">
+  
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+ 
+
+  <div class="slides">
+    <div id="slide-1">
+      <a href="https://www.melaniemartinezmusic.com/"><img src=crybabypic.jpg> </li> </a>
+      <li class="info">
+         <h1>Dollhouse</h1>
+         <h4>Crybaby</h4>
+         <h2>Melanie Martinez</h2>
+  <!-- This element loads the audio file - it will not actually be visible in the browser. -->
+  <audio id="music-file">
+    <source src="Melanie Martinez - Dollhouse (Official Music Video).mp3" type="audio/mpeg">Your browser does not support the audio element.
+  </audio>
+
+  <!-- Construct your music player interface here - the play button has been created for you. -->
+        <div class = "buttons">
+  <button id="back-button"><li class="fa-solid fa-backward"></i></button><button id="play-button"><li class="fa-solid fa-play"></i></button><button id="pause-button"><li class="fa-solid fa-pause"></i></button><button id="forward-button"><li class="fa-solid fa-forward"></i></button>
+        </div>
+    </div>
+    <div id="slide-2">
+      <img src="slide2.jpg" alt="slide2">
+    </div>
+    <div id="slide-3">
+      <img src=slide3.jpg alt="slide3">
+    </div>
+      <div class="slider">
+  
+  <a href="#slide-1">1</a>
+  <a href="#slide-2">2</a>
+  <a href="#slide-3">3</a>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

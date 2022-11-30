@@ -1,0 +1,135 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+}
+
+
+#back-button{
+  border: none;
+  width: 80px;
+  height: 50px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  align-items: center;
+
+}
+#back-button:hover{
+  border: 1px solid #000000;
+  background-color: #f09393;
+}
+
+#play-button{
+  border: none;
+  width: 80px;
+  height: 50px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  align-items: center;
+
+}
+
+#play-button:hover{
+  border: 1px solid #000000;
+  background-color: #f09393;
+}
+
+
+#pause-button{
+  border: none;
+  width: 80px;
+  height: 50px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  align-items: center;
+
+}
+#pause-button:hover{
+  border: 1px solid #000000;
+  background-color: #f09393;
+  width: 80px;
+  height: 50px;
+}
+
+
+#skip-button{
+  border: none;
+  width: 80px;
+  height: 50px;
+  background-color: #eee;
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  align-items: center;
+
+}
+#skip-button:hover{
+  border: 1px solid #000000;
+  background-color: #f09393;
+}
+
+img {
+    width:300px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.singer {
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.song-slider{
+    width: 100%;
+    position: relative;
+}
+
+.seek-bar{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 5px;
+    border-radius: 10px;
+    background: #7fc8a9;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.seek-bar::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    box-shadow: -400px 0 0 400px #d5eebb;
+}
+
+.current-time,
+.song-duration{
+    font-size: 14px;
+}
+
+.song-duration{
+    position: absolute;
+    right: 0;
+}
+
+.controls{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 20px;
+}

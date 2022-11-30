@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="style-photo.css" rel="stylesheet" type="text/css" />
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+  <script src="p5-script.js" defer></script>
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+
+  <h1> Whitley Calder IMS322 - Project 2 </h1>
+
+  <nav>
+    <button class="active-button" id="tab1">1</button>
+    <button id="tab2">2</button>
+    <button id="tab3">3</button>
+  </nav>
+
+  <main>
+    <section class="active-section" id="section1">
+      Responsive Photo Gallery - Dog Edition
+      <!-- This section represents one row of your gallery. -->
+      <!-- You will need at least 2 or 3, depending on your desired layout. -->
+      <article class="flex-row">
+
+        <!-- This div is the container for one image with a caption. You will need 2 or 3 of these per row, depending on your desired layout. -->
+        <div class="image-container">
+          <!-- this is first -->
+          <img src="dog1.jpg" alt="dog1">
+          <p class="caption">I love this dog.</p>
+        </div>
+        <!-- this is second-->
+        <div class="image-container">
+          <img src="dog2.jpg" alt="dog2">
+          <p class="caption"> I also love this dog. </p>
+        </div>
+
+        <div class="image-container2">
+          <!-- this is third-->
+          <img src="dog3.jpg" alt="dog3">
+          <p class="caption"> I love this dog too. </p>
+        </div>
+      </article>
+
+
+      <article class="flex-row2">
+
+        <!-- This div is the container for one image with a caption. You will need 2 or 3 of these per row, depending on your desired layout. -->
+        <div class="image-container">
+          <!-- this is first -->
+          <img src="dog4.jpg" alt="dog4">
+          <p class="caption">I love this dog so much.</p>
+        </div>
+        <!-- this is second-->
+        <div class="image-container">
+          <img src="dog5.jpg" alt="dog5">
+          <p class="caption"> I also love his ears. </p>
+        </div>
+
+        <div class="image-container2">
+          <!-- this is third-->
+          <img src="dog6.jpg" alt="dog6">
+          <p class="caption"> I love this dog sitting. </p>
+        </div>
+      </article>
+
+    </section>
+
+    <section id="section2"> DIY Carousel </section>
+
+    <section id="section3"> P5 Project </section>
+
+  </main>
+
+
+</body>
+
+</html>

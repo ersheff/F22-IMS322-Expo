@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js" defer></script>
+  <script src="p5PScript.js" defer></script>
+  <script src="script.js" defer></script>
+  <script src="Carousel.js" defer></script>
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body id="b">
+  <nav>
+    <button id="tab1" class="active-button">1</button>
+    <button id="tab2">2</button>
+    <button id="tab3">3</button>
+  </nav>
+  
+  <section id="section1" class="active-section" >
+    <span class="button" id="btnL">&#8678;</span>
+    <span class="button" id="btnT">&#8679;</span>
+    <span class="button" id="btnR">&#8680;</span>
+    <!-- A suggestion for organizing your carousel: -->
+    <div class="Csection" class="carousel-container">
+      <div class="section Linactive" id="LSide">
+        <article class="sectionContent">Content 1</article>
+      </div>
+      <div class="section Tinactive" id="TSide">
+        <article  class="sectionContent">Content 1</article>
+      </div>
+      <div class="section Rinactive" id="RSide">
+        <article class="sectionContent">Content 1</article>
+      </div>
+    </div>
+  </section>
+  <section id="section2">
+    <h1>Snakes</h1>
+     <div class="flex-row">
+
+    
+    <div class="image-container">
+      <img src="Images/OwlSnake.jpg">
+      <p class="caption">A cute owl and it's snake skarf</p>
+    </div>
+
+    <div class="image-container">
+      <img src="Images/SnakeStaff.jpg">
+      <p class="caption">The caduceus, a staff carried by Hermes as a symbol of peace</p>
+    </div>
+    <div class="image-container">
+      <img src="Images/BlueGraySnake.jpg">
+      <p class="caption"> Boa Constrictor before the shedding.</p>
+    </div>
+
+  </div>
+
+  
+  <div class="flex-row">
+    <div class="image-container">
+      <img src="Images/RainbowSnake.jpg">
+      <p class="caption">A cool render of a snake</p>
+    </div>
+    <div id=Column>
+      <div class="image-containerC">
+        <img src="Images/WhiteSnake.jpg">
+        <p class="caption">A white Ball Python slithering around</p>
+      </div>
+      <div class="image-containerC">
+        <img src="Images/BlueSnake.jpg">
+        <p class="caption"> A snake just hanging in there</p>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="section3" id="sketch-holder">
+    <button id="poem_toggle" class="button-91" role="button">Poem Toggle</button>
+  </section>
+</body>
+
+</html>

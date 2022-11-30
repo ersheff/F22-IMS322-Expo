@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  background-color: lavenderblush;
+  color: black;
+  padding: 1rem;
+}
+
+nav {
+  background-color: lavenderblush;
+}
+
+button {
+  font-size: 2rem;
+  width: 5ch;
+  border-radius: 5px 5px 0px 0px;
+  border: none;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: lavender;
+}
+
+.active-button {
+  background-color: lavender;
+}
+
+.active-button:hover {
+  background-color: lavender;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: lavender;
+  padding: 1rem;
+  display: none;
+}
+.tab-title {
+    font-size: 4rem;
+}
+
+.active-section {
+  display: block;
+}html, body {
+  height: 100%;
+  width: 100%;
+}

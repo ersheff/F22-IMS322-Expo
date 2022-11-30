@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+
+  <main>
+    <nav>
+      <!-- music player -->
+      <section>
+        <a href="#music-player-content" class="music-player">Music Player</a>
+      </section>
+      <section>
+        <a href="#distinguished-navbar-content" class="dis-navbar">Distinguished Navbar</a>
+      </section>
+      <section>
+        <a href="#questionnare-content" class="questionnare">Questionnare</a>
+      </section>
+    </nav>
+
+      <div id="music-player-content">
+
+        <img src="love-cover.jpg" class="love-image">
+        <H1 id="song-name">Love Like You</H1>
+        <p id="sing-name">Rebecca Sugar</p>
+        
+      
+        <!-- This element loads the audio file - it will not actually be visible in the browser. -->
+        <audio id="music-file">
+          <source src="love-like-you.mp3" type="audio/mpeg">Your browser does not support the audio element.
+        </audio>
+      
+        <!-- Construct your music player interface here - the play button has been created for you. -->
+      
+        <!-- Timestamp slider-->
+          <div class="slider_container">
+            <div class="current-time" id="current-time">00:00</div>
+            <input type="range" min="1" max="100"
+              value="0" class="seek_slider" onchange="seekTo()">
+            <div class="total-duration">02:19</div>
+          </div>
+        
+        <!-- Track buttons -->
+          <div class="buttons">
+            <div class="playpause-track" onclick="playpauseTrack()">
+              <i class="fa fa-play-circle fa-5x">⏯</i>
+            </div>
+          </div>
+
+        <!-- volume and mute -->
+        <p> 🔊 </p>
+        <input type="range" id="volume-control">
+        
+      </div>
+      <div id="distinguished-navbar-content">
+        
+        <img src="nintendo-logo.png" alt="Nintendo Logo" class="nin-logo">
+        <!-- Distinguished Navbar -->
+        <nav class="flex-container">
+          <!-- Don't forget to add a logo! -->
+          <a href="https://www.nintendo.com/">Home</a>
+          <a href="https://www.nintendo.com/store/games/?p=1&sort=df&f=corePlatforms&corePlatforms=Nintendo+Switch">Nintendo Shop</a>
+          <a href="https://www.nintendo.com/whatsnew/">News</a>
+          <a href="https://en-americas-support.nintendo.com/">Support</a>
+        </nav>
+      
+        <img src="switch.png" alt="Nintendo Switch image" class="switch">
+        <p id="nav-explanation"> I decided to make the navbar the same red and white as the nintendo logo, even finding out the exact code of the color red they use in their logo and copying it in the red for my navbar. I did the same for the blue hover animation, the hover color being the same color as their blue joycon on the nintendo switch. I made the text black on click because the grey was too light but the black was also prevalent upon looking at the consolde. I like the sleek design of the red, blue and black elements all fit together on the Switch so that's why I chose this product and brand to base my navbar off of.</p>
+      </div>
+    
+    <!-- Questionnare -->
+      <div id="questionnare-content">
+        <div class="background-tiel">
+        <!-- Questions/Controls -->
+        <div class="flex-tiel">
+          <h1 id="tiel-text">Cockatiel Owners Unite</h1>
+          <div class="input-column">
+            <input type="text" id="first-name-input" placeholder="first name">
+            <input type="text" id="last-name-input" placeholder="last name">
+          </div>
+        <div class="adoption-date">
+          <label for="date-selector">Date you adopted your cockatiel:</label>
+          <input type="date" id="date-selector" name="adoption-day">
+        </div>
+          <!--Number of Tiel questions below-->
+        <fieldset id="number-section">
+          <label for="number-section">How many cockatiel(s) do you have?</label>
+            <div>  
+              <input type="radio" id="1" value="1" name="number-tiel">
+              <label for="1">1</label>
+            </div>
+            <div>  
+              <input type="radio" id="2" value="2" name="number-tiel">
+              <label for="2">2</label>
+            </div>
+            <div>  
+              <input type="radio" id="3+" value="3+" name="number-tiel">
+              <label for="3+">3+</label>
+            </div>
+        </fieldset>
+          <!--Color of Tiel questions below-->
+        <fieldset id="color-section">
+          <label for="color-section">What color cockatiel(s) do you have?</label>
+            <div>
+              <input type="checkbox" id="grey" value="grey" name="color-tiel">
+              <label for="grey">Grey</label>
+            </div>
+            <div>
+              <input type="checkbox" id="whiteface" value="whiteface" name="color-tiel">
+              <label for="whiteface">White-faced</label>
+            </div>
+              <input type="checkbox" id="pearl" value="pearl" name="color-tiel">
+              <label for="pearl">Pearl</label>
+            <div>
+              <input type="checkbox" id="cinnamon" value="cinnamon" name="color-tiel">
+              <label for="cinnamon">Cinnamon</label>
+            </div>
+            <div>
+              <input type="checkbox" id="lutino" value="lutino" name="color-tiel">
+              <label for="lutino">Lutino</label>
+            </div>
+            <div>
+              <input type="checkbox" id="pied" value="pied" name="color-tiel">
+              <label for="pied">Pied</label>
+            </div>
+            <div>
+              <input type="checkbox" id="blue" value="blue" name="color-tiel">
+              <label for="blue">Blue</label>
+            </div>
+            <div>
+              <input type="checkbox" id="other" value="other" name="color-tiel">
+              <label for="other">Other</label>
+            </div>
+        </fieldset>
+        <button id="submit-button">Submit</button>
+        </div>
+        <!-- Bio Section (to be populated with answers from the questionairre. -->
+        <div class="bio-flex">
+          <fieldset id="bio-section">
+            <img src="tiel-icon.png" class="tiel-icon">
+            <p id="name-output" name="name">Your Name Here</p>
+            <p id="adoption-date">Cockatiel Adoption Date:</p>
+            <p id="amount-tiel">How many tiel(s) you have</p>
+            <p id="color-tiel">Color of tiel(s) you own:</p>
+          </div>
+        </fieldset>
+      </div>
+ 
+    </div>
+  </main>
+
+</body>
+
+</html>

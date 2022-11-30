@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  
+  <link href="tabstyle.css" rel="stylesheet" type="text/css" />
+  <link href="p5style.css" rel="stylesheet" type="text/css" />
+  <link href="qstyle.css" rel="stylesheet" type="text/css" />
+  <link href="photostyle.css" rel="stylesheet" type="text/css" />
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@1&display=swap" rel="stylesheet">
+  
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+    <script src="q-script.js" defer></script>
+  <script src="p5-script.js" defer></script>
+  <script defer src="https://unpkg.com/p5.collide2d"></script>
+
+  
+</head>
+
+<body>
+<h1>My Gallery!</h1>
+
+<nav>
+  <button class="active-button" id="tab1">1</button>
+  <button id="tab2">2</button>
+  <button id="tab3">3</button>
+</nav>
+
+<main>
+  <section class="active-section" id="section1">
+    <p class="tab-title">P5 Poem</p>
+    <div id="p5-canvas">
+    </div>
+  </section>
+  <section id="section2">
+    <p class="tab-title">Questionarre</p>
+    <div>
+<div class="total">
+
+<section class="question-section">
+<div class="enter-name">
+  <input type="text" id="first-name" placeholder="First name">
+  <input type="text" id="last-name" placeholder="Last name">
+</div>
+  <div class="other-questions">
+  <div>
+    <label for="date-selector">Enter your birthday:</label>
+    <input type="date" id="date-selector">
+  </div>
+    
+<!-- radio -->
+<fieldset id="cupcake-radio" class="styled-fieldset">
+    <label for="cupcake-radio">Choose your favorite cupcake:</label>
+    <div>
+      <input type="radio" id="chocolate" value="chocolate" name="fav-cupcake">
+      <label for="chocolate">Chocolate</label>
+    </div>
+    <div>
+      <input type="radio" id="strawberry" value="strawberry" name="fav-cupcake">
+      <label for="strawberry">Strawberry</label>
+    </div>
+    <div>
+      <input type="radio" id="vanilla" value="vanilla" name="fav-cupcake">
+      <label for="vanilla">Vanilla</label>
+    </div>
+  <div>
+      <input type="radio" id="other" value="other" name="fav-cupcake">
+      <label for="other">Other</label>
+    </div>
+  </fieldset>
+
+  <p>How many cupcake stores have you visited?</p>
+  <input type="range" min="0" max="100" value="12" step="1"  id="slider" oninput="this.nextElementSibling.value = this.value">
+    <output>12</output>
+    
+  <input type="text" id="cupcake-name" placeholder="Enter your favorite cupcake!">
+  </div>
+  
+  <button id="submit-button" type="button">Submit!</button>
+  
+</section>
+
+  <!-- Bio Section (to be populated with answers from the questionairre. -->
+  <section class="bio-section">
+  
+    <h1>♡ Cupcake Lovers Club! ♡</h1>
+    <img class="cupcake-img" src="images/cupcake.jpg" alt="cupcake">
+    <div class="first-name">
+      <p>First name: </p>
+      <p id="first-name-output"></p>
+    </div>
+    <div class="last-name">
+      <p>Last name: </p>  
+      <p id="last-name-output"></p>
+    </div>
+    <div class="date-of-birth">
+      <p>Birthday: </p>
+      <p id="date-output"></p>
+    </div>
+    
+    <div class="fav-cupcake">
+      <p>Favorite type of cake: </p>
+      <p id="cake-output"></p>
+    </div>
+    <div class="number">
+      <p>Number of cupcake shops visited: </p>
+      <p id="slider-output"></p>
+    </div>
+    <div class="fav-cake">
+      <p>Favorite Cupcake: </p>
+      <p id="favorite-cupcake-output"></p>
+    </div>
+</section>
+</div>
+    </div>
+  </section>
+  <section id="section3">
+    <p class="tab-title">Photo Gallery</p>
+    <div class="pink-rose-title">Pink Flowers</div>
+  
+  <div class="flex-container">
+
+  <section class="flex-row">
+
+    <div class="image-container">
+      <img class="rose-img" src="images/rose1.jpg" alt="rose">
+      <p class="caption">la vie en rose.</p>
+    </div>
+
+    <div class="image-container">
+      <img class="rose-img" src="images/rose2.jpg" alt="rose">
+      <p class="caption">come up roses.</p>
+    </div>
+
+    <div class="image-container">
+      <img class="rose-img" src="images/rose3.jpg" alt="rose">
+      <p class="caption">a bed of roses.</p>
+    </div>
+    
+  </section>
+
+  <section class="flex-row">
+
+    <div class="image-container">
+      <img class="rose-img" src="images/rose4.jpg" alt="rose">
+      <p class="caption">blushing like a rose.</p>
+    </div>
+
+    <div class="image-container">
+      <img class="rose-img" src="images/rose5.jpg" alt="rose">
+      <p class="caption">rose-colored glasses.</p>
+    </div>
+
+    <div class="image-container">
+      <img class="rose-img" src="images/rose6.jpg" alt="rose">
+      <p class="caption">life in pink.</p>
+    </div>
+    
+  </section>
+  
+</div>
+    <div>  
+      
+    </div>
+  </section>
+</main>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+<div class="flex-container">
+
+  <body>
+    <aside style="min-width: 250px;">
+      <nav>
+        <a href="#section1" style="color: white;">Profile Questionnaire</a>
+        <a href="#section2" style="color: white;">Data Viz</a>
+        <a href="#section3" style="color: white;">Music Player</a>
+      </nav>
+    </aside>
+    <section>
+      <article id="section1" class="section1" style="display: flex;">
+        <div>
+          <div class="first">
+            Name:<br>
+            <input type="text" id="my-text" placeholder="e.g. Leo"><br><br>
+            Job:<br>
+            <input type="text" id="my-text1" placeholder="e.g. writer"><br><br>
+            Brith:<br>
+            <input type="text" id="my-text2" placeholder="e.g. 09/21/2022"><br><br>
+          </div>
+  
+  
+          <fieldset id="payment" class="payment-style">
+            <label for="payment">Choose your favourite payment:</label>
+            <div>
+              <input type="radio" id="cash" value="cash" name="payment-option">
+              <label for="cash">Cash</label>
+            </div>
+            <div>
+              <input type="radio" id="bank-card" value="bank-card" name="payment-option">
+              <label for="bank-card">Bank Card</label>
+            </div>
+            <div>
+              <input type="radio" id="apple-pay" value="apple-pay" name="payment-option">
+              <label for="apple-pay">Apple Pay</label>
+            </div>
+            <div>
+              <input type="radio" id="other" value="other" name="payment-option">
+              <label for="other">Other</label>
+            </div>
+          </fieldset>
+  
+  
+          <div class="second">
+            <label for="number-select">Proportion of payment:</label>
+            <select name="number" id="number-select">
+              <option value="">- Choose a range -</option>
+              <option value="25%">0~25%</option>
+              <option value="50%">25~50%</option>
+              <option value="75%">50~75%</option>
+              <option value="100%">75~100%</option>
+            </select>
+          </div>
+  
+  
+          <fieldset id="risk" class="risk-style">
+            <label for="risk">Has an accident occurred?</label>
+            <div>
+              <input type="radio" id="yes" value="yes" name="yesno-option">
+              <label for="yes">Yes</label>
+            </div>
+            <div>
+              <input type="radio" id="no" value="no" name="yesno-option">
+              <label for="no">No</label>
+            </div>
+          </fieldset>
+  
+  
+          <div class="third">
+            <label for="report">How can I help you?</label><br>
+            <textarea id="report" name="report" rows="5" cols="33"></textarea>
+          </div>
+  
+          <div>
+            <button id="submit-button">Submit</button>
+          </div>
+        </div>  
+        <p id="show-data">Waiting...</p>      
+      </article>
+
+
+
+
+      <article id="section2" class="section2">
+        <div class="player">
+
+          <div class="details">
+            <div class="track-art"></div>
+            <div class="track-name"><a herf='https://en.wikipedia.org/wiki/G.E.M.'>畵</a></div>
+            <div class="track-artist">GEM鄧紫棋</a></div>
+          </div>
+
+          <audio id="music-file" controls>
+            <source src="sample.mp3" type="audio/mpeg">
+          </audio>
+
+      </article>
+
+
+
+
+      <article id="section3">
+        <h1>Rating of the Degree to Which the Elderly Like Color </h1>
+        <div1 id="rectangle"></div1>
+        <div>
+          <p>totalDogs: <span id="total"></span> </p>
+        </div>
+
+
+        <div1 id="rectangle1"></div1>
+        <div>
+          <p>totalCats: <span id="total1"></span> </p>
+        </div>
+
+
+        <div1 id="rectangle2"></div1>
+        <div>
+          <p>totalBirds: <span id="total2"></span> </p>
+        </div>
+
+        <div1 id="rectangle3"></div1>
+        <div>
+          <p>totalFish: <span id="total3"></span> </p>
+        </div>
+
+        <div1 id="rectangle4"></div1>
+        <div>
+          <p>totalRabbits: <span id="total4"></span> </p>
+        </div>
+
+        <div1 id="rectangle5"></div1>
+        <div<p>totalReptiles: <span id="total5"></span> </p>
+        
+<div1 id="rectangle6"></div1>
+<div>
+  <p>totalOther: <span id="total6"></span> </p>
+</div>
+
+<div>
+  <h1>Favorite Index of Cold Color</h1>
+  <p id=total-p></p>
+</div>
+</div>
+
+
+
+
+</article>
+</section>
+
+</body>
+</div>
+
+</html>

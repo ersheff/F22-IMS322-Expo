@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Dela+Gothic+One&family=Montserrat:wght@100;300&family=Oswald:wght@300&family=Poppins:wght@500&family=Quicksand:wght@300;600&family=Roboto:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div>
+
+<!--Top Nav Bar-->
+  <header>
+    <p class="title">Katelyn Root's Gallery</p>
+    <nav id="top-nav">
+      <a href="#section-1" class="topnavbar">Nav Bar</a>
+      <a href="#section-2" class="topnavbar">Data Viz</a>
+      <a href="#section-3" class="topnavbar">Photo Gallery</a>
+    </nav>
+  </header>
+<!--Top Nav Bar-->
+
+<main>
+  <!--Distinguished Nav Bar-->
+  <section id="section-1" class="section">
+     <h2> Distinguished Nav Bar </h2>
+  <nav class="flex-container">
+    <div class="logo-image">
+      <img src="logo.png" class="img-fluid">
+    </div> 
+    
+    <a href="" class="dnavbar">Waterbottles</a>
+    <a href="" class="dnavbar">Customize</a>
+    <a href="" class="dnavbar">Products</a>
+    <a href="" class="dnavbar">Sale</a>
+  </nav>
+
+  <p class="description"> Hydroflask’s brand is sleek, modern, playful, and colorful. To carry this out in the navigation bar, a straightforward font was used, as well utilizing black/white with hints of teal to match the color of the teal Hydroflask. The same logo on the bottle was also placed next to the links to make the page and brand look seamless. </p>
+
+ <p class="animation"><img src="hydroflask.jpg" class="product"></p>
+</section>
+<!--Distinguished Nav Bar-->
+
+<!--DataViz--> 
+<section id="section-2" class="section">
+  <h2>Relationship between Homework and Sleep </h2>
+  
+  <div class="flex-container-hours">
+    <p><b>Average amount of hours my friends spend doing homework a day:</b></p>
+    <p id="avg-output" ></p>
+  </div>
+
+  <div class="flex-container-total">
+    <p><b>Overall total amount of hours my friends collectively spend doing homework a day:</b></p>
+    <p id="total-output" ></p>
+  </div>
+
+  <p><b>Number of hours of sleep my friends get: </b></p>
+
+ <div class="flex-container3">
+
+  <div class="flex-container-title">
+    <div class="ten" id="ten-bar">
+      <p> 10+ hours: 1 </p>
+    </div>
+
+    <div class="nine" id="nine-bar">
+       <p> 9 hours: 2 </p>
+    </div>
+
+    <div class="eight" id="eight-bar">
+       <p> 8 hours: 5 </p>
+    </div>
+
+   <div class="seven" id="seven-bar">
+       <p> 7 hours: 2 </p>
+    </div>
+    
+   <div class="six" id="six-bar">
+       <p> Six or less hours: 1 </p>
+    </div>
+
+  </div>
+    
+</div>  
+</section>
+<!--DataViz--> 
+
+<!--Photo Gallery--> 
+  <section id="section-3" class="section">
+    <h2> Beach Photo Gallery </h2>
+
+  <div class="flex-row">
+    
+    <div class="flex-col">
+      <img src="img/australia.jpg" alt="Beach picture 1"> 
+      <p class="caption">Australia</p>
+    </div>
+
+    <div class="flex-col">
+      <img src="img/dominican-republic.jpg" alt="Beach picture 2"> 
+      <p class="caption">Caribbean</p>
+    </div>
+
+    <div class="flex-col">
+      <img src="img/malaysia.jpg" alt="Beach picture 3"> 
+      <p class="caption">Malaysia</p>
+    </div>
+
+</div>
+
+<div class="flex-row">
+   
+    <div class="flex-col">
+      <img src="img/maldives.jpg" alt="Beach Picture 4"> 
+      <p class="caption">Maldives</p>
+    </div>
+
+      <div class="flex-col">
+        <img src="img/puerto-rico.jpg" alt="Beach Picture 5"> 
+        <p class="caption">Piñones</p>
+      </div>
+
+      <div class="flex-col">
+        <img src="img/united-states.jpg" alt="Beach Picture 6"> 
+        <p class="caption">Naples</p>
+      </div>
+  
+</div>
+  </section>
+<!--Photo Gallery--> 
+  
+</main>
+</div>
+</body>
+
+</html>

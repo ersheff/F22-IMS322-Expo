@@ -1,0 +1,91 @@
+*{
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+}
+
+html, body {
+  background-color: #E8E5E5;
+  scroll-behavior: smooth;
+}
+
+#logo{
+  width: 15%;
+  max-width: 100px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #DEBDB3;
+  z-index: 1;
+}
+
+
+a{
+  text-decoration: none;
+  color: black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+
+#photo-button{
+  background-color: #b0d8ff;
+  border: 1px solid #465776;
+}
+
+#photo-button:hover{
+  transition-duration: 0.6s;
+  background-color: white;
+  border: 1px solid #465776;
+}
+
+
+#carousel-button{
+  background-color: #B7DFA9;
+  border: 1px solid #465776;
+}
+
+#carousel-button:hover{
+  transition-duration: 0.6s;
+  background-color: white;
+  border: 1px solid #465776;
+}
+
+#profile-button{
+  background-color: #F7A278;
+  border: 1px solid #465776;
+}
+
+#profile-button:hover{
+  transition-duration: 0.6s;
+  background-color: white;
+  border: 1px solid #465776;
+}
+
+
+#photo{
+  background-color: #C4A484;
+  height: auto;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+#profile{
+  background-color: #d0b5a1;
+  height: auto;
+  padding-top: 5rem;
+}
+
+#carousel{
+  background-color: lightpink;
+  height: 85vh;
+  padding-top: 5rem;
+}

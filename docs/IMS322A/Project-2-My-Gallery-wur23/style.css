@@ -1,0 +1,159 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+
+.flex-container{
+  display:flex;
+  width:100%;
+}
+
+aside{
+  background-color: lightblue;
+}
+
+nav{
+  display:flex;
+  flex-direction: column;
+  gap:1ch;
+  position: sticky;
+  top:0;
+  padding:1rem;
+  font-size: 20px;
+}
+
+nav a:hover{
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+article{
+  height: 1000px;
+  width: 100%;
+  border:10px solid grey;
+  padding: 1rem;
+}
+
+ a{
+   text-decoration: none;
+ }
+
+.section1{
+  background-color: yellowgreen;
+  font-weight: bolder;
+}
+
+
+
+
+
+.player {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+ 
+.details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+ 
+.track-art {
+  margin: 25px;
+  height: 275px;
+  width: 275px;
+  background-image: url(draw.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15%;
+}
+ 
+.track-name {
+  font-size: 3rem;
+}
+ 
+.track-artist {
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+h1{
+  font-size:2em;
+}
+
+.payment-style {
+  border: 2px solid lightblue;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.risk-style{
+  border: 2px solid lightblue;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+#rectangle {
+    height: 20px;
+    background: #4da1f7;
+}  
+
+#rectangle1 {
+  height:20px;
+  background: red;
+}
+
+#rectangle2 {
+  height:20px;
+  background: yellow;
+}
+
+#rectangle3 {
+  height:20px;
+  background: green;
+}
+
+#rectangle4 {
+  height:20px;
+  background: purple;
+}
+
+#rectangle5 {
+  height:20px;
+  background: orange;
+}
+
+#rectangle6 {
+  height:20px;
+  background: black;
+}
+
+div1{
+  border:1px;
+  float:left;
+}
+
+.section2{
+  background-color: purple;
+  font-weight: bold;
+}
+
+
+
+
+

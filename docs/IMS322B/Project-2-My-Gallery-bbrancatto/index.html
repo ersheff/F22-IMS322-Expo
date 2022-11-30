@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="stylemusic.css" rel="stylesheet" type="text/css" />
+  <link href="stylegallery.css" rel="stylesheet" type="text/css" />
+  <link href="stylecarousel.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <h1 class="my-name">Ben Brancatto</h1>
+
+  <nav>
+    <button class="active-button" id="tab1">Music Player</button>
+    <button id="tab2">Photo Gallery</button>
+    <button id="tab3">Carousel</button>
+  </nav>
+</body>
+
+</html>
+
+<main>
+  <section class="active-section" id="section1">
+
+    <h1 class="title"> What You Know</h1>
+    <h1 class="title"> Two Door Cinema Club</h1>
+    <audio id="music-file">
+      <source src="whatyouknow.mp3" type="audio/mpeg">
+    </audio>
+
+    <nav class="flex-container">
+
+      <div class="image-container">
+        <img src=coverart.jpg>
+      </div>
+
+      <button class="music-button" id="previous-button"> |<< </button>
+          <button class="music-button" id="play-button">I></button>
+          <button class="music-button" id="pause-button">||</button>
+          <button class="music-button" id="skip-button">>>|</button>
+    </nav>
+  </section>
+
+
+  <section id="section2">
+    <h1 class="cactus-title">CACTUS GALLERY</h1>
+    <section class="flex-row">
+      <div class="image-container">
+        <img src="images/cactusmexico.jpg" alt="cactus in mexico">
+        <p class="caption">Cacti in front of a red wall with a neon sign that reads "Mexico Mi Amor."</p>
+      </div>
+      <div class="image-container">
+        <img src="images/cactuscorner.jpg" alt="cactus in corner">
+        <p class="caption"> Close up of the spines of a cactus.</p>
+      </div>
+    </section>
+
+    <section class="flex-row2">
+      <div class="image-container">
+        <img src="images/cacti.jpg" alt="cacti">
+        <p class="caption">Close up of several cacti.</p>
+      </div>
+      <div class="image-container">
+        <img src="images/cactusgascan.jpg" alt="cactus gas can">
+        <p class="caption">Various kinds of cacti in a gas can.</p>
+      </div>
+    </section>
+
+    <section class="flex-row3">
+      <div class="image-container">
+        <img src="images/cactuswhite.jpg" alt="cactus white background">
+        <p class="caption">A few cacti in front of a white wall.</p>
+      </div>
+      <div class="image-container">
+        <img src="images/cactusground.jpg" alt="cactus in ground">
+        <p class="caption">A planted cacti with thousands of buds.</p>
+      </div>
+    </section>
+
+
+  </section>
+
+
+
+  <section id="section3">
+
+    <div class="center-button">
+      <t class="title2"> Refrigerators:</t>
+      <button class="fridge-button" id="btn1">1</button>
+      <button class="fridge-button" id="btn2">2</button>
+      <button class="fridge-button" id="btn3">3</button>
+    </div>
+
+    <p class="basic-para" id="para1"><img src="fridge.jpg" class="center"> 1</p>
+    <p class="basic-para inactive" id="para2"><img src="refridgerator.jpg" class="center">2</p>
+    <p class="basic-para inactive" id="para3"><img src="twodoorfridge.jpg" class="center">3</p>
+
+
+  </section>
+
+
+
+</main>

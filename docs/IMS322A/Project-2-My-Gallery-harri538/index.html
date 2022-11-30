@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="styles2.css">
+  <script src="p5.min.js"></script>
+  <script src="p5.js" defer></script>
+  <script src="script.js" defer></script>
+      <link rel="stylesheet" href="styles3.css">
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+
+  <div class="intro">
+    <h1>Nathan Harris Portfolio</h1>
+  </div>
+
+  <nav>
+    <button class="active-button" id="tab1">Music Player</button>
+    <button id="tab2">DIY Carousel</button>
+    <button id="tab3">P5 Poem</button>
+  </nav>
+
+  <main>
+
+    <section class="active-section" id="section1"><body>
+   <div class="player">
+       <div class="wrapper">
+           <div class="details">
+               <div class="track-art"></div>
+               <div class="track-name">Track Name</div>
+               <div class="track-artist">Track Artist</div>
+           </div>
+
+           <div class="slider_container">
+               <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="total-duration">04:02</div>
+           </div>
+
+           <div class="slider_container">
+               <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume_slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+           </div>
+
+           <div class="buttons">
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+           </div>
+
+            <div id="wave">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div>  
+       </div>
+   </div>
+</body>
+    </section>
+
+    <section id="section2">
+      <body-carousel>
+      <div class="slider-carousel">
+        <div class="images-carousel">
+          <input type="radio" name="slide" id="img1-carousel" checked>
+          <input type="radio" name="slide" id="img2-carousel">
+          <input type="radio" name="slide" id="img3-carousel">
+          <input type="radio" name="slide" id="img4-carousel">
+
+          <img src="outside.jpg" class="m1" alt="img1-carousel">
+          <img src="wheel.jpg" class="m2" alt="img2-carousel">
+          <img src="interior.jpg" class="m3" alt="img3-carousel">
+          <img src="back.jpg" class="m4" alt="img4-carousel">
+        </div>
+        <div class="dots-carousel">
+          <label for="img1-carousel"></label>
+          <label for="img2-carousel"></label>
+          <label for="img3-carousel"></label>
+          <label for="img4-carousel"></label>
+        </div>
+      </div>
+    </body-carousel>
+    </section>
+
+    <section id="section3">
+      <div class="p5">
+        <div id="p5-canvas"></div>
+      </div>
+    </section>
+
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="p5.min.js"></script>
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+<main>
+  <header class="header">
+	  <h1 class="logo"><a href="#">Hailey Leddy</a></h1>
+      <ul class="main-nav">
+        <li><a href="#section1">Poem</a></li>
+        <li><a href="#section2">DIY Slider</a></li>
+        <li><a href="#section3">Music Player</a></li>
+      </ul>
+  </header> 
+
+
+  <section id="section1">Poem
+  <div id="frogcanvas"></div>
+</section>
+  
+
+  <section id="section2">DIY Slider
+   <div id="slideshow-container">
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  
+  <div class="mySlides fade">
+    <img src="austriasummer.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="austriafall.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="austriawinter.jpg" style="width:100%">
+  </div>
+
+    <div class="mySlides fade">
+    <img src="austriaspring.jpg" style="width:100%">
+  </div>
+
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+  
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+  </section>
+
+
+  <section id="section3">Music Player
+    
+    <div id="musicplayer">
+          <audio id="music-file">
+        <source src="onlymp3.to - Give Me One Reason (2015 Remaster)-ItBbngybK3U-192k-1660327208767.mp3" type="audio/mpeg">Your browser does not support the audio element.
+      </audio>
+    
+      <div class="flex2">  
+         
+        <div class="flex1">
+          
+      <div class="img">
+        <a href="https://www.about-tracy-chapman.net/">
+        <img src="givemeonereason.jpg" alt="Give Me One Reason">
+        </a>
+      </div>
+          
+      
+      <div class="title">
+        <h1>Give Me One Reason</h1>
+        <p1>Tracy Chapman</p1>
+      </div> 
+          
+        </div>
+    
+      <div id="flex3">
+    
+        <button id="skipback-button">Skip Back<img src="backward-solid.svg" alt="skip back"> </button>
+      
+      <button id="play-button">play<img src="play-solid.svg" alt="play"></button>
+      
+      <button id="pause-button">Pause<img src="pause-solid.svg" alt="pause"></button> 
+      
+      <button id="skipahead-button">Skip Ahead <img src="forward-solid.svg" alt="skip ahead"></button> 
+      </div>
+      
+  </div>
+      
+  </div>
+   
+</section>
+  
+ </main>
+</body>
+
+</html>

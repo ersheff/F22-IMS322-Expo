@@ -1,0 +1,38 @@
+
+.flex-container1 {
+  display: flex;
+  gap: 1ch;
+  text-align: center;
+  font-family: monospace;
+  font-size: 3ch;
+}
+
+.flex-container2 {
+  display: flex;
+  gap: 1ch;
+  margin-top: 1ch;
+  text-align: center;
+  font-family: monospace;
+  font-size: 3ch;
+}
+
+.galleryimg {
+  width: 95%;
+  
+}
+
+.flex1, .flex2, .flex3 {
+  flex: 1;
+  background-color: white;
+  border: 1ch solid white;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    color: black;
+  }
+  .flex-container1, .flex-container2 {
+    flex-direction: column;
+  }
+}
+

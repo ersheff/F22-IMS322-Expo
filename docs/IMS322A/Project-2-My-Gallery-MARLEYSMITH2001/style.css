@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+*{
+  box-sizing: border-box;
+} 
+
+.slider {
+  width: 600px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.slides {display: flex;
+         overflow-x: auto;
+         scroll-snap-type: x mandatory;
+           scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+
+
+        }
+  
+img {
+ width:600px
+
+}
+
+body{
+  background-color: #fadeec;
+}
+.slides{
+  border: 6px solid white;
+}
+
+p{
+  text-align: center;
+}
+
+div{
+  display:block;
+}

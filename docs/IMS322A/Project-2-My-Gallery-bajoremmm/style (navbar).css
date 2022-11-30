@@ -1,0 +1,80 @@
+:root{
+  --w:white;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  border-radius:8px;
+  padding:0.8rem;
+}
+
+p{
+  color: grey;
+}
+a:link{
+  color:black;
+}
+
+a:visited{
+  color:white;
+}
+
+a:hover{
+  color: white;
+  background-color: black;
+  transition: 2s;
+}
+
+.flex-container{
+  display: flex;
+  gap: 1ch;
+  background-color:grey;
+  height: 5rem;
+  align-items: center;
+ 
+}
+
+.img-fluid{
+  display:flex;
+  overflow:hidden;
+  margin-top:auto;
+  height: 2rem;
+  padding-left: 1ch;
+
+}
+
+.product {
+  width: 100%;
+}
+
+.animation{
+  width:100%;
+  animation-name: movin;
+  animation-duration:5s;
+  animation-direction:alternate;
+  animation-timing-function:ease-in-out;
+}
+
+@keyframes movin {
+  from {
+    margin-left: -100%;
+    transform: translateY(0);
+  }
+  to{
+    margin-left: 100%;
+    transform:translateY(8rem);
+  }
+}
+
+
+@media (max-width: 400px) {
+  .flex-container{
+    flex-direction:column;
+   
+  }
+}
+

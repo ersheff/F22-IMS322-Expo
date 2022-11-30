@@ -1,0 +1,105 @@
+/*photo gallery styling*/
+
+.gallery-size {
+  width: 20vw;
+  height: auto;
+  border-color: #fedcb4;
+  border-width: 1vw;
+  border-style: double;
+  margin: 2vw;
+}
+
+.photo-caption {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  text-align: center;
+  background-color: #ffc17e;
+  border-color: #9c3d06;
+  border-width: 0.5vw;
+  border-style: solid;
+}
+
+.photo-groups {
+  width: 100vw;
+  display: flex; 
+  justify-content: space-evenly;
+}
+
+.mini-flower {
+  width: 3vw;
+  height: 3vw;
+}
+
+.flex-header {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  background-color: #9c3d06;
+  color: #fedcb4;
+  margin: 1vw 5.5vw;
+  justify-content: center;
+  border-color: #ffc17e;
+  border-style: double;
+  border-width: 0.5vw;
+}
+
+.vertical-gap {
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+}
+
+/*Media Query One*/
+@media (max-width: 600px) {
+.photo-caption {
+  flex-direction: row;
+  width: 80vw;
+  justify-content:flex-start
+}
+.photo-groups {
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  }
+  .gallery-size {
+    width: 40vw;
+  }
+  p{
+    margin: 3vw;
+  }
+  #sticky {
+    position: fixed;
+    width: 100vw;
+  }
+  #photo-gallery, #questionnaire, #poem {
+    margin-top: 20vh;
+  }
+}
+
+/*Media Query Two*/
+  @media (max-width: 550px) {
+  #photo-gallery, #questionnaire, #poem {
+    margin-top: 30vh;
+  }
+  }
+  
+/*Media Query Three*/
+@media (max-width: 400px) {
+  .photo-caption {
+  flex-direction: column;
+  }
+  .gallery-size {
+    width: 75vw;
+    border-width: 2.5vw;
+    border-color: #9c3d06;
+  }
+  .photo-caption {
+width: 85vw;
+  }
+  #photo-gallery, #questionnaire, #poem {
+    margin-top: 40vh;
+  }
+  }

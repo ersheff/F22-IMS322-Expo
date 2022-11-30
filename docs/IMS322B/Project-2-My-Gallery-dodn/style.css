@@ -1,0 +1,103 @@
+html, body {
+  scroll-behavior: smooth;
+  height: 100%;
+  background-color: #FFF3F4;
+}
+
+
+.valerie-do {
+  font-family: 'Oleo Script', cursive;
+  color: #FBA3B1;
+  font-size: 20ch;
+  text-align: center;
+  text-shadow: 4px 4px #F74F6B;
+  margin: 0;
+  background-color: #FFE7E9;
+}
+
+nav {
+  display: flex;
+  padding: 0.5rem;
+  gap: 2ch;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  justify-content: center;
+}
+
+.nav-child {
+  display: flex;
+  background-color: #FEC6CA;
+  width: 15ch;
+  height: 4ch;
+  text-align: center;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-child:hover {
+  background-color: #F74F6B;
+}
+
+a {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 2ch;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: #FFE7E9;
+}
+
+.p-title {
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+  color: #F74F6B;
+  text-align: center;
+  font-weight: bold;
+}
+
+#page-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1ch;
+}
+
+#page-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1ch;
+}
+
+#sketch-parent {
+  display: flex;
+  justify-content: center;
+}
+
+#sketch-holder {
+  border: 3px solid white;
+  width: 100%;
+  height: 100%;
+  /*overflow: hidden;*/
+}

@@ -1,0 +1,160 @@
+html, body {
+  max-height: 100%;
+  max-width: 100%;
+  margin:0px;
+  background-color: black;
+  color: white;
+}
+
+@font-face {
+  font-family: undertaleFont;
+  src: url(files/undertale-font.ttf);
+}
+
+#site-body {
+  font-family: undertaleFont;
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+
+#nav-bar {
+  display: flex;
+  background-color: #151973;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 2% 0% 2%;
+}
+
+#name {
+  font-size: 32px;
+  padding: 0px;
+  margin: 15px 0px 15px 0px;
+}
+
+nav{
+  display: flex;
+  width: 65%;
+  gap: 5%;
+  justify-content: flex-end;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h2 {
+  margin: 0% 0% 2% 0%;
+}
+
+#flex-container {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+}
+
+button {
+  font-family: undertaleFont, monospace;
+  color:yellow;
+  font-size: 30px;
+  background: none;
+  border: none;
+}
+
+.inactive:hover {
+  color: yellow;
+}
+
+.inactive {
+  color:white;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+}
+
+#time-slider {
+  margin: 2% 0% 0% 0%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px; /* Specified height */
+  border-radius: 2px;
+  background: white;
+}
+
+#mute-button {
+  width: 16px;
+  height: 16px;
+  background: url("files/images/mute-button.png") no-repeat;
+  border: none;
+}
+
+#mute-button:hover {
+    background: url("files/images/mute-button-yellow.png") no-repeat;
+}
+
+#mute-button.inactive {
+  background: url("files/images/volume-button.png") no-repeat;
+}
+
+#mute-button.inactive:hover {
+  background: url("files/images/volume-button-yellow.png") no-repeat;
+}
+
+#album-cover {
+  width: 20%;
+  background-color: white;
+  padding: 1%;
+  margin: 2%;
+}
+
+@media (max-width: 500px) {
+  #flex-container {
+    flex-direction: column;
+  }
+
+  h2 {
+  margin: 0% 0% 5% 0%;
+}
+
+  button {
+    margin: auto;
+  }
+
+  #time-slider {
+    margin: 5% 0% 0% 0%;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  #album-cover {
+    width: 50%;
+    padding: 2%;
+    margin: 5%;
+  }
+
+    nav {
+    flex-direction: column;
+    width: 40%;
+  }
+
+  a {
+    margin: 0px 0px 0px auto;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Week 6: Profile Questionnaire</title>
+  <link href="pqstyle.css" rel="stylesheet" type="text/css" />
+  <script src="pqscript.js" defer></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+</style>
+
+</head>
+
+<div class="pqheader">
+  <h1>Swifties' Survey</h1>
+  <h2>Results</h2>
+</div>
+
+<section class= "bio-section">
+<p id= "name-output"> First Name </p>
+<p id= "birth-output"> 00/00/0000 </p>
+<p id= "years-output"> Swiftie years </p>
+<p id= "results"> Your favorites: </p>
+<p id= "tour-output"> Taylor on tour? </p>
+  
+<img src="hands.png" alt="heart hands">
+  
+</section>
+
+<div class= "meep">
+<h2> Questions </h2>
+</div>
+  
+  <!-- Text - includes placeholder attribute -->
+  <input type="text" id="first-name"
+  placeholder = 'Enter first name'>
+
+  <!-- Date -->
+  <div>
+    <fieldset id="date-guy" class="styled-guy">
+      <label for="date-selector">Enter your birthday:</label>
+      <input type="date" id="birthday">
+     </fieldset>
+  </div>
+
+
+  <!-- Range - slider-style continuous control -->
+  <div>
+    <fieldset id="slider-guy" class="styled-slider">
+      <p2> How many years have you been a Swiftie?</p2>
+     <input type="text" id="years"
+  placeholder = 'years'>
+    </fieldset>
+  </div>
+
+
+  <!-- Radio buttons - one selection allowed -->
+  <fieldset id="album-radio" class="styled-fieldset">
+    <label for="album-radio">Choose your favorite Taylor Swift albums:</label>
+    <div>
+      <input type="checkbox" id="t" name="fav-album">
+      <label for="taylor swfit">Taylor Swift</label>
+    </div>
+    <div>
+      <input type="checkbox" id="f" name="fav-album">
+      <label for="fearless">Fearless</label>
+    </div>
+    <div>
+      <input type="checkbox" id="s" name="fav-album">
+      <label for="speak now">Speak Now</label>
+    </div>
+    <div>
+      <input type="checkbox" id="r" name="fav-album">
+      <label for="red">Red</label>
+    </div>
+    <div>
+      <input type="checkbox" id="nine" name="fav-album">
+      <label for="1989">1989</label>
+    </div>
+    <div>
+      <input type="checkbox" id="rep" name="fav-album">
+      <label for="reputation">Reputation</label>
+    </div>
+    <div>
+      <input type="checkbox" id="l" name="fav-album">
+      <label for="lover">Lover</label>
+    </div>
+    <div>
+      <input type="checkbox" id="fl" name="fav-album">
+      <label for="folklore">Folklore</label>
+    </div>
+    <div>
+      <input type="checkbox" id="e" name="fav-album">
+      <label for="evermore">Evermore</label>
+    </div
+  </fieldset>
+  
+  <!-- Select -->
+  <div>
+   <fieldset id="silly-goof" class="wacky-fieldset">
+    <p2>Have you seen Taylor Swift on tour? </p2>      
+      <input type="text" id="tour"
+  placeholder = 'yes or no'>
+   </fieldset
+  </div>
+
+
+  
+  <!-- Bio Section (to be populated with answers from the questionairre. -->
+
+  <button id="submit">Submit</button>
+
+  </body>
+
+
+</html>
+

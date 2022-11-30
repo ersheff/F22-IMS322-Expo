@@ -1,0 +1,76 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.flex-container{
+  display: flex;
+  padding:10px;
+  font-size:20px;
+  font-family:raleway;
+  gap: 2ch;
+  align-items: center;
+}
+
+a{
+  transition: 2s;
+  text-decoration: none;
+}
+
+a:hover{
+  font-size: 2rem;
+  background-color: lightblue;
+
+}
+
+a:link{
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+.portrait {
+  display: block;
+  width: 40%;
+  margin: 1rem;
+  
+}
+
+.description {
+  font-size: 1.5rem;
+}
+
+.buyshoes-rainbow {
+  animation-name: rainbow;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;     text-align: center;
+
+}
+
+@keyframes rainbow {
+  0%   { color: white; }
+  25%  { color: lightblue; }
+  50%  { color: pink; }
+  100% { color: green; }
+}
+
+/* Currently set to the width of an iPhone 13 display - feel free to adjust as needed */
+@media (max-width: 390px) {
+  .flex-container{
+    flex-direction: column;
+  }
+
+.nike {
+    width:300px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+}
+
+

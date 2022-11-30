@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+  width: 100%;
+    box-sizing: border-box;
+  margin: 0;
+  font-family: 'Tiro Devanagari Hindi', serif;
+}
+
+.total {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-image: url(images/sprinkles.jpg);
+  gap: 3ch;
+  padding: 3ch;
+}
+.question-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1ch;
+  gap: 1ch;
+  align-items: center;
+}
+
+.enter-name {
+  display: flex;
+  width: 100%;
+  gap: 1ch;
+}
+
+
+.other-questions {
+  display: flex;
+  width: 80%;
+  flex-direction: column;
+  gap: 1ch;
+}
+
+.cupcake-img {
+  width: 30%;
+  
+}
+
+.first-name {
+  display: flex;
+  gap: 1ch;
+}
+
+.last-name {
+  display: flex;
+  gap: 1ch;
+}
+
+.date-of-birth {
+  display: flex;
+  gap: 1ch;
+}
+
+.fav-cupcake {
+  display: flex;
+  gap: 1ch;
+}
+
+.number {
+  display: flex;
+  gap: 1ch;
+}
+
+.fav-cake {
+  display: flex;
+  gap: 1ch;
+}
+
+.bio-section {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1ch;
+  align-items: center;
+}
+
+
+@media (max-width: 760px) {
+  .total {
+    flex-wrap: wrap;
+  }
+ .enter-name {
+   flex-direction: column;
+   width: 70%;
+ }
+}

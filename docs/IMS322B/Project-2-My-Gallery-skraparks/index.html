@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+
+<nav id="top-nav">
+  <div>Galería de Portafolios:</div>
+  <a href="#page-1">Questionaire</a>
+  <a href="#page-2">Image-Gallery</a>
+  <a href="#page-3">Nav-Bar</a>
+</nav>
+
+<main>
+  <section id="page-1">
+    <p>
+<p>Lizard Lover Questionnaire</p>
+
+
+  <section class="question-section">
+    <input type="text" id="full-name" placeholder="Enter Full Name">
+  </section>
+ 
+
+
+  <section class="bday">
+    <label for="birthday">Enter Birthday:</label>
+    <input type="date" id="birthday" name="birthday" value="2021-      11-14">
+  </section>
+
+
+  <section class="lizard">
+      <div>
+    <label for="lizard-select">Choose fav lizard:</label>
+    <select name="lizards" id="lizard-select">
+      <option value="">- Choose a lizard -</option>
+      <option value="liz1">Bearded Dragon</option>
+      <option value="liz2">Fence Swift</option>
+      <option value="liz3">Gila Monster</option>
+      <option value="liz4">Green Anole</option>
+      <option value="liz5">Water Monitor</option>
+      <option value="liz6">Basilisk</option>
+    </select>
+  </div>
+  </section>
+
+
+
+    <section class="name">
+      <div>
+    <label for="name-select">Give lizard a name:</label>
+    <select name="name" id="name-select">
+      <option value="">- Choose a name -</option>
+      <option value="nam1">Spike</option>
+      <option value="nam2">Thorny</option>
+      <option value="nam3">Scales</option>
+      <option value="nam4">Swifty</option>
+      <option value="nam5">Shark</option>
+      <option value="nam6">Woof</option>
+    </select>
+  </div>
+  </section>
+
+  
+  <section class="food">
+  <fieldset id="food-radio" class="styled-fieldset">
+    <label for="food-radio">What will you feed lizard?</label>
+    <div>
+      <input type="radio" id="lettuce" value="lettuce" name="liz-food">
+      <label for="lettuce">Lettuce</label>
+    </div>
+    <div>
+      <input type="radio" id="crickets" value="crickets" name="liz-food">
+      <label for="crickets">Crickets</label>
+    </div>
+    <div>
+      <input type="radio" id="Tomato" value="Tomato" name="liz-food">
+      <label for="Tomato">Tomato</label>
+    </div>
+  </fieldset>
+      </section>
+
+
+  <section class="bio-section">
+    <p id="name-output"></p>
+    <p id="bday-output"></p>
+  </section></p>
+  </section>
+
+  <!-------------------------------------------->
+  
+  <section id="page-2">
+    <p>
+      <p>Image Gallery</p>
+         <section class="flex-row">
+
+
+    <div class="image-container">
+      <img src="toucan.jpg" alt="toucan">
+      <p class="caption">The colors of the Toucan are remarkable.</p>
+    </div>
+    
+    <div class="image-container2">
+      <img src="fog.jpg" alt="fog">
+      <p class="caption">The jungle is beautiful from above.</p>
+    </div>
+
+     <div class="image-container3">
+      <img src="jaguar.jpg" alt="jaguar">
+      <p class="caption">The bite force of a Jaguar is 4x that of a lion.</p>
+    </div>
+    
+  </section>
+
+  <section class="flex-row2">
+
+    <div class="image-container4">
+      <img src="moneky.jpg" alt="monkey">
+      <p class="caption">The Howler Moneky got its name for a reason.</p>
+    </div>
+
+     <div class="image-container5">
+      <img src="river.jpg" alt="river">
+      <p class="caption">Rivers are home to other diverse species.</p>
+    </div>
+
+     <div class="image-container6">
+      <img src="spider.jpg" alt="spider">
+      <p class="caption">Spiders are marvels - spare them.</p>
+    </div>
+    
+  </section> 
+      
+    </p>
+    <a href="#top-nav">back to top</a>
+  </section>
+
+  
+  <section id="page-3">
+    
+    <p>
+      <p>Nav Bar</p>
+
+     <nav class="flex-container">
+    <!-- Don't forget to add a logo! -->
+    <a href="">Shop</a>
+    <a href="">Gallery</a>
+    <a href="">FAQ</a>
+    <a href="">Lens</a>
+  </nav>
+
+  <section class="flex-container">
+  <div class="flex-item">
+    <img src="eno.jpg" alt="">
+  </div>
+
+  <section class="flex-container2">
+  <div class="flex-item">
+    <img src="logo.jpg" alt="";>
+  </div>
+      
+    </p>
+    
+    <a href="#top-nav">back to top</a>
+  </section>
+</main>
+  
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-container {
+  position: relative;
+  
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+}
+
+
+.active {
+  opacity: 1;
+  animation-name: fade;
+  animation-duration: 2.0s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.active-button {
+  background-color: #b4b5ca
+}
+
+#buttons {
+  border: none;
+  padding: 5px;
+  display: flex;
+}
+
+#navigation {
+  display: flex;
+}
+
+#first-button {
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+#second-button {
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+#third-button {
+  font-size: 20px;
+  font-family: 'Courier New', monospace;
+}
+
+#caden {
+  font-family: Impact, sans-serif;
+  font-size: 35px;
+  color: #9e9e9e;
+  text-shadow: 2px 2px #000000;
+  margin-left: 30px;
+}
+
+#profile-image {
+  width: 400px;
+  border-radius: 80px;;
+}
+
+fieldset {
+  border: 0px;
+}
+
+.bio-section {
+color: #5c5c5c;
+margin-left: 30px;
+margin-top: 70px;
+}
+
+#bio {
+  display: flex;
+  font-family: Montserrat;
+}
+
+.question-section {
+font-family: Montserrat;
+color: #5c5c5c;
+}
+
+#first-last-name {
+width: 250px;
+font-family: Montserrat;
+color: #5c5c5c;
+}
+
+#birthday {
+width: 250px;
+font-family: Montserrat;
+color: #5c5c5c;
+}
+
+#select-level {
+font-family: Montserrat;
+color: #5c5c5c;
+}
+
+#about-me {
+font-family: Montserrat;
+color: #5c5c5c;
+width: 300px;
+}
+
+#submit-button {
+font-family: Montserrat;
+color: #5c5c5c;
+}
+
+@media (max-width: 925px) {
+#bio {
+  display: block;
+}
+}
+
+
+
+.img2 {
+  height: auto;
+  width: 100%;
+  border-radius: 25px;
+}
+
+h1 {
+  font-family: Fantasy;
+  justify-content: center;
+  text-align: center;
+  font-size: 70px;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+.parent2 {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-content: center;
+  gap: 30px;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 1516px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1006px) {
+  h1 {
+    font-size: 35px;
+  }
+
+.caption {
+text-align: center;
+font-family: Helvetica;
+padding-top: 
+}
+
+
+#container {
+  width: 600px;
+  height: 500px;
+  padding-right: 15px;
+}
+
+#data {
+  display: flex;
+  padding-left: 10px;
+}
+
+#list {
+  padding-top: 80px;
+}
+
+@media (max-width: 990px) {
+#data {
+  display: block;
+  padding-left: 10px;
+}
+
+#list {
+  padding-top: 30px;
+  padding-left: 150px;
+}
+
+  @media (max-width: 650px) {
+#data {
+  display: block;
+  padding-left: 10px;
+}
+
+#list {
+  padding-top: 30px;
+  padding-left: 60px;
+}
+
+  #container {
+  width: 400px;
+  height: 300px;
+  padding-right: 15px;
+}
+
+.caption {
+text-align: center;
+font-family: Helvetica;
+padding-top: 
+}

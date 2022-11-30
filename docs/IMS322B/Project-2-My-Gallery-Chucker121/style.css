@@ -1,0 +1,226 @@
+body{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+h1 {
+  background-color: lightblue;
+  color: blue;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+
+nav {
+  background-color: blue;
+}
+
+button {
+  font-size: 2rem;
+  width: 5ch;
+  transition: 0.1s;
+  border-bottom: none;
+  z-index: 2;
+}
+
+button:hover {
+  background-color: orange;
+}
+
+.active-button {
+  background-color: lightblue;
+}
+
+.active-button:hover {
+  background-color: lightblue;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;
+  padding: 0;
+  font-size: 4rem;
+  display: none;
+  z-index: 2;
+}
+
+.active-section {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.section{
+  height: 100%;
+  width: 100%;
+  opacity: 40%;
+  position: absolute;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+#LSide{
+  background-color: red;
+}
+#TSide{
+  background-color: green;
+  z-index: -1;
+}
+#RSide{
+  background-color: blue;
+}
+.Linactive{
+  overflow: hidden;
+  translate: -95%;
+  z-index: 100;
+}
+.Tinactive{
+  overflow: hidden;
+  translate:0% -95%;
+  z-index: 1;
+}
+.Rinactive{
+  overflow: hidden;
+  translate: 95%;
+  z-index: 100;
+}
+.sectionContent{
+  opacity: 100%;
+  color: yellow;
+}
+.carousel-container{
+  height: 100%;
+  width: 100%;
+}
+.Cbutton{
+  position: absolute;
+  z-index: 9999;
+  font-size: 3em;
+}
+#btnL{
+  top: 50%;
+  left: 5%;
+}
+#btnT{
+  top: 5%;
+  right: 50%;
+}
+#btnR{
+  top: 50%;
+  right: 5%;
+}
+.button-91 {
+  text-align: center;
+  color: #fff;
+  padding: 15px 100px;
+  margin: 0;
+  background-color: #38D2D2;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 66% at 26% 20%, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: inset -3px -3px 9px rgba(255, 255, 255, 0.25), inset 0px 3px 9px rgba(255, 255, 255, 0.3), inset 0px 1px 1px rgba(255, 255, 255, 0.6), inset 0px -8px 36px rgba(0, 0, 0, 0.3), inset 0px 1px 5px rgba(255, 255, 255, 0.6), 2px 19px 31px rgba(0, 0, 0, 0.2);
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 16px;
+  
+  border: 0;
+}
+.CanvasInactive canvas{
+  
+  translate: 9999999px;
+  
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 2%;
+  
+}
+
+.image-container{
+  display: flex;
+  gap: .5em;
+  margin: .4em;
+  flex-direction: column;
+  width: 20%;
+  height: auto;
+  flex:1;
+}
+
+.image-containerC{
+  display: flex;
+  gap: .5em;
+  margin-bottom: .4em;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  flex:1
+}
+
+#Column{
+display: flex;
+  gap: .5em;
+  margin: .4em;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  
+}
+
+@media (max-width: 450px){
+.flex-row{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  
+}
+
+.image-container{
+  display: flex;
+  gap: 0em;
+  margin: 0em;
+  width:100%;
+}
+img {
+  width: 90%;
+  height: auto;
+}
+  
+}
+
+@media (max-width: 720px){
+  .image-containerC{
+    margin-bottom: -1em;
+  }
+}
+
+.caption{
+  margin-top: 0;
+  width: auto;
+}
+.scrollDown{
+  overflow-y: scroll;
+}
+p{
+  font-size: 17px;
+}
+body{
+  background-color: lightblue;
+}
+main{
+  z-index: -2;
+}
+h1{
+  text-align: center;
+}

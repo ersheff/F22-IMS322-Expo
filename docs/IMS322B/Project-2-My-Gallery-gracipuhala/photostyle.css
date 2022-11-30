@@ -1,0 +1,47 @@
+.rose-img {
+  width: 100%;
+}
+
+.pink-rose-title {
+
+  display: flex;
+  width: 100%;
+  font-size: 4ch;
+  justify-content: center;
+  background-color: #f6e3e7;
+  padding: 1ch;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5ch;
+  align-items: center;
+  background-color: #f6e3e7;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5ch;
+    background-color: #f6e3e7;
+
+}
+
+.image-container {
+  background-color: white;
+  /* padding-left: 1ch;
+  padding-top: 1ch;
+  padding-right: 0.5ch;*/
+  padding: 1ch;
+}
+
+.caption {
+font-family: 'Playfair Display', serif;  text-align: center;
+}
+
+
+@media (max-width: 500px) {
+  .flex-row {
+    flex-direction: column; }
+  }

@@ -1,0 +1,346 @@
+
+.cd-player {
+  position: relative;
+  background-color:#FBA3B1;
+  height: 51ch;
+  width: 50ch;
+  border-radius: 40px;
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 1.3ch;
+  color: white;
+  background-color: #F74F6B;
+  width: 50%;
+  margin-left: 16ch;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 5px;
+}
+
+.artist {
+  position: relative;
+  text-align: center;
+  color: #F74F6B;
+  font-size: 1ch;
+  background-color: white;
+  width: 35%;
+  margin-left: 28ch;
+  margin-top: -1ch;
+  font-family: 'Roboto Mono', monospace;
+  border-radius: 5px;
+}
+
+#slidercontainer {
+  position: absolute;
+  transform: rotate(90deg);
+  left: -20%;
+  top: 45%;
+}
+
+#slider {
+  -webkit-appearance: none;
+  width: 30ch;
+  /*appearance: slider-vertical;
+  height: 30ch;  */
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  /*appearance: none; */
+  width: 32px; 
+  height: 32px; 
+ /* border-radius: 50%; */
+  /*background: url('http://iconizer.net/files/Duesseldorf/orig/heart.png') no-repeat; */
+  background: url('heart.png');
+  cursor: pointer; /* Cursor on hover */
+  color: #FFC8C1;
+  margin-top: -11px;
+}
+
+#slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 1.3px;
+  border: 0.2px white;
+}
+#slider::-moz-range-thumb {
+  -webkit-appearance: none; /* Override default look */
+  /*appearance: none; */
+  width: 32px; 
+  height: 32px; 
+ /* border-radius: 50%; */
+  background: url('heart.png');
+  cursor: pointer; /* Cursor on hover */
+  color: #FFC8C1;
+  margin-top: -11px;
+  border: none;
+}
+
+#slider::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 30px;
+  /*border: 0.1px white;*/
+}
+
+/* CUSTOMIZE THE TIME SLIDER */
+
+#slider1 {
+  -webkit-appearance: none;
+  width: 25ch;
+  /*appearance: slider-vertical;
+  height: 30ch;  */
+}
+
+#slider1::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  /*appearance: none; */
+  width: 32px; 
+  height: 32px; 
+ /* border-radius: 50%; */
+  /*background: url('http://iconizer.net/files/Duesseldorf/orig/heart.png') no-repeat; */
+  background: url('heart1.png');
+  cursor: pointer; /* Cursor on hover */
+  color: #FFC8C1;
+  margin-top: -11px;
+}
+
+#slider1::-webkit-slider-runnable-track {
+  height: 10px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 1.3px;
+  border: 0.2px white;
+}
+
+#slider1::-moz-range-thumb {
+  appearance: none;
+  width: 32px; 
+  height: 32px; 
+ /* border-radius: 50%; */
+  /*background: url('http://iconizer.net/files/Duesseldorf/orig/heart.png') no-repeat; */
+  background: url('heart1.png');
+  cursor: pointer; /* Cursor on hover */
+  color: #FFC8C1;
+  margin-top: -11px;
+  border: none;
+}
+
+#slider1::-moz-range-track {
+  appearance: none;
+  height: 10px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 1.3px;
+  border-color: transparent;
+  border: none;
+  outline: none;
+}
+
+
+
+#cd {
+  position: absolute;
+  background-color: #404040;
+  height: 35ch;
+  width: 35ch;
+  border-radius: 50%;
+  top: 13%;
+  left: 16%;
+  animation:  spin 5000ms infinite linear;
+  border-color: white;
+  border-width: 10%;
+  
+}
+
+.flex-container{
+  display: flex;
+  flex-direction: column;
+  margin-top: 75%;
+  justify-content: center;
+  align-items: center;
+  gap: -0.6ch;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#timeoutput {
+  margin-bottom: -0.5ch;
+  margin-top: -0.7ch;
+  font-weight: bold;
+}
+
+
+img {
+  width: 3.5ch;
+}
+
+
+.logoimg {
+  position: absolute;
+  padding-left: 38%;
+  top: 38%;
+  width: 25%;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+button:hover {
+  filter: invert(1);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@media (max-width: 450px) {
+  .cd-player {
+  position: relative;
+  background-color:#FBA3B1;
+  height: 40ch;
+  width: 40ch;
+  border-radius: 40px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  font-size: 1ch;
+  background-color: #F74F6B;
+  width: 50%;
+  margin-left: 16ch;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.artist {
+  position: relative;
+  text-align: center;
+  font-size: 1ch;
+  background-color: white;
+  width: 35%;
+  margin-left: 22ch;
+  margin-top: -1ch;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#cd {
+  position: absolute;
+  background-color: #404040;
+  height: 25ch;
+  width: 25ch;
+  border-radius: 50%;
+  top: 15%;
+  left: 19%;
+  animation: spin 5000ms infinite linear;
+  
+}
+.flex-container{
+  display: flex;
+  margin-top: 70%;
+  justify-content: center;
+  gap: -0.5ch;
+
+}
+  img {
+  width: 2.8ch;
+}
+
+#slidercontainer {
+  position: absolute;
+  transform: rotate(90deg);
+  left: -25%;
+  top: 45%;
+}
+
+#slider {
+  -webkit-appearance: none;
+  width: 30ch;
+  /*appearance: slider-vertical;
+  height: 30ch;  */
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  /*appearance: none; */
+  width: 32px; 
+  height: 32px; 
+ /* border-radius: 50%; */
+  /*background: url('http://iconizer.net/files/Duesseldorf/orig/heart.png') no-repeat; */
+  background: url('heart.png');
+  cursor: pointer; /* Cursor on hover */
+  color: #FFC8C1;
+  margin-top: -11px;
+}
+
+#slider::-webkit-slider-runnable-track {
+  height: 7px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 1.3px;
+  border: 0.2px white;
+}
+
+  /* CUSTOMIZE THE TIME SLIDER */
+
+#slider1 {
+  -webkit-appearance: none;
+  width: 25ch;
+  /*appearance: slider-vertical;
+  height: 30ch;  */
+}
+
+#slider1::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  /*appearance: none; */
+  width: 32px; 
+  height: 32px; 
+ /* border-radius: 50%; */
+  /*background: url('http://iconizer.net/files/Duesseldorf/orig/heart.png') no-repeat; */
+  background: url('heart1.png');
+  cursor: pointer; /* Cursor on hover */
+  color: #FFC8C1;
+  margin-top: -11px;
+}
+
+#slider1::-webkit-slider-runnable-track {
+  height: 10px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 1.3px;
+  border: 0.2px white;
+}
+
+#slider1::-webkit-slider-runnable-track {
+  height: 7px;
+  cursor: pointer;
+  background: #FFF3F4;
+  border-radius: 1.3px;
+  border: 0.2px white;
+}
+  
+
+
+

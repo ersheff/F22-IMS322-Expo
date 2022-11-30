@@ -1,0 +1,112 @@
+/*Questionnaire styling*/
+.questionnaire-content {
+  display: flex;
+}
+
+.questions-section {
+  background-color: #ffc17e;
+  height: 100%;
+  width: 43vw;
+  display: flex;
+  flex-direction: column;
+  margin: 1.5vw;
+}
+
+.bio-section {
+  background-color: lightsalmon;
+  width: 53vw;
+  padding-left: 1vw;
+  color: #5C2506;
+}
+
+.pfp-and-name {
+  display: flex;
+  gap: 2vw;
+}
+
+.pfp {
+  width: 15rem;
+  height: 15rem;
+  border-color: #9c3d06;
+  border-width: 5px;
+  border-style: solid;
+}
+
+p, label {
+  font-size: 18px;
+}
+
+.checkflex {
+  display: flex;
+  flex-direction: center;
+  gap: 2vw;
+}
+
+input, select {
+  font-family: "Architects Daughter";
+  font-size: 18px;
+  background-color: #fedcb4;
+  color: #9c3d06;
+  border-color: #c17948;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+.customcheck {
+  appearance: none;
+  background-color:  #fedcb4;
+  border: 1px solid #c17948;
+	padding: 9px;
+	border-radius: 3px;
+}
+
+.customcheck:active {
+  background-color:  #9c3d06;
+  transition: 0.5s;
+}
+
+.customcheck:checked {
+  background-color:  #c17948;
+  transition: 0.5s;
+}
+
+
+.customradio {
+  appearance: none;
+  background-color:  #fedcb4;
+  border: 1px solid #c17948;
+	padding: 9px;
+	border-radius: 50%;
+}
+
+.customradio:active {
+  background-color:  #9c3d06;
+  transition: 0.5s;
+}
+
+.customradio:checked {
+  background-color:  #c17948;
+  transition: 0.5s;
+}
+
+#submit {
+  font-family: "Architects Daughter";
+  font-size: 18px;
+  background-color: #fedcb4;
+  color: #9c3d06;
+  border-color: #c17948;
+  border-width: 2px;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-color: #9c3d06;
+  color: #fedcb4;
+  transition: 1s;
+}
+
+@media (max-width: 950px) {
+.pfp-and-name {
+  flex-direction: column;
+}
+}

@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1 {
+  background-color: #BDC0FF;
+  color:  #000795 ;
+  padding: 1rem;
+}
+
+nav {
+  background-color: #BDC0FF;
+}
+
+button {
+  font-size: 2rem;
+  color: #BDC0FF;
+  width: 5ch;
+  border-radius: 5px 5px 0px 0px;
+  border: none;
+  transition: 0.1s;
+}
+
+button:hover {
+  background-color: #010663 ;
+}
+
+.active-button {
+  background-color: #000795;
+}
+
+.active-button:hover {
+  background-color:#000795;
+}
+
+section {
+  width: 100%;
+  color: #BDC0FF;
+  height: 100%;
+  background-color: #000795;
+  padding: 1rem;
+  font-size: 2rem;
+  display: none;
+}
+
+.active-section {
+  display: block;
+}

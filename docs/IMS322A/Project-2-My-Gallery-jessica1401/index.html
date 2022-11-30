@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+ 
+  <script src="script.js" defer></script>
+  <script src="scriptpoem.js" defer></script>
+
+  <script src="p5.min.js"></script>
+  <script src="p5.sound.min.js"></script>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Architects+Daughter&family=Cookie&family=Gloria+Hallelujah&family=Homemade+Apple&family=Indie+Flower&display=swap" rel="stylesheet">
+  <!-- Don't forget to add the p5 library if you are including Project 1 in your gallery -->
+
+</head>
+
+<body>
+
+  <main>
+
+    <div class="navbar">
+      <nav id="top-nav">
+        <a id="nav-item" href="#about">JESSICA NG</a>
+        <a id="nav-item" href="#section1">POLAROID NAVBAR</a>
+        <a id="nav-item" href="#section2">PROFILE QUESTIONNAIRE</a>
+        <a id="nav-item" href="#section3">INTERACTIVE GALLERY</a>
+      </nav>
+    </div>
+
+
+
+    <section id="about" class="intro">
+      <h1 id="name">Jessica Nguyen</h1>
+      <a id="nav-item" href="#section1" class="project">POLAROID NAVBAR</a>
+      <a id="nav-item" href="#section2" class="project">PROFILE QUESTIONNAIRE</a>
+      <a id="nav-item" href="#section3" class="project">INTERACTIVE GALLERY</a>
+    </section>
+
+    <section id="section1">
+      <div class="flex-container1">
+        <img src="images/polaroid-logo.png" alt="logo" class="logo"></a>
+
+        <ul class="nav-links">
+          <li class="nav-item"><a href="https://us.polaroid.com/collections/instant-cameras">Instant Cameras</a></li>
+          <li class="nav-item"><a href="https://us.polaroid.com/collections/instant-film">Instant Film</a></li>
+          <li class="nav-item"><a href="https://us.polaroid.com/collections/polaroid-printers">Printers</a></li>
+          <li class="nav-item"><a href="https://us.polaroid.com/collections/accessories">Acccessories</a></li>
+          <li class="nav-item"><a href="https://us.polaroid.com/">About Us</a></li>
+        </ul>
+
+      </div>
+
+      <div class="flex-container2">
+        <h2 class="move">Save Your Moments With Instant</h2>
+
+        <a href="https://us.polaroid.com/products/polaroid-now?variant=31712404406344" target="_blank"
+          class="shop-now">Shop
+          Now!</a>
+
+      </div>
+
+      </div>
+    </section>
+
+
+
+    <section id="section2">
+
+      <div class="bigflex">
+        <div class="flex-item1">
+          <h1 class="profileh1">The Fashion Hub</h1>
+          <img src="images/groupimg.jpg" alt="Fashion Group Image" class="profileimg">
+        </div>
+
+        <div class="flex-item2">
+          <section class="bio-section">
+            <h2 class="profileh2">About You</h2>
+            <p><label for="name">Name: </label><input type="text" id="name-input"></p>
+
+            <p><label for="birthday"> Date Of Birth: </label>
+              <input type="date" id="birthday" name="birthday">
+            </p>
+
+            <p><label for="bio">Bio: </label></p>
+            <textarea id="bio" name="bio" rows="4" cols="40"
+              placeholder="Tell us about you and your fashion inspiration!"></textarea>
+          </section>
+
+          <section class="question-section">
+
+            <h2 class="profileh2">Questions</h2>
+            <fieldset>
+              <p><label for="question1">1. What is your favorite item in the closet? </label><input type="text"
+                  id="question1"></p>
+            </fieldset>
+            <!-- question 2-->
+            <fieldset id="question2" class="styled-fieldset2">
+              <p><label for="question2">2. Your favorite fashion season? </label></p>
+
+              <input type="radio" name="question2" id="spring" value="spring">
+              <label for="spring">Spring</label>
+
+              <input type="radio" name="question2" value="summer" id="summer">
+              <label for="summer">Summer</label>
+
+              <input type="radio" name="question2" value="fall" id="fall">
+              <label for="Fall">Fall</label>
+
+              <input type="radio" name="question2" value="winter" id="winter">
+              <label for="winter">Winter</label>
+
+            </fieldset>
+
+            <!--question 3 -->
+            <fieldset id="question3" class="styled-fieldset3">
+              <p><label for="question3">3. Your ✨aesthetic✨ </label></p>
+
+              <div>
+                <input type="checkbox" name="retro" id="retro">
+                <label for="retro">Retro/Vintage</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="softgirl" id="softgirl">
+                <label for="softgirl">Soft Girl</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="y2k" id="y2k">
+                <label for="y2k">Y2K</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="skater" id="skater">
+                <label for="skater">Skater</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="artsy" id="artsy">
+                <label for="artsy">Artsy</label>
+              </div>
+
+            </fieldset>
+
+            <!-- question4 -->
+            <fieldset>
+              <p><label for="question4">4. How about the best Fashion Week? </label></p>
+              <select name="question4" id="question4">
+                <option value="NewYork">New York Fashion Week</option>
+                <option value="London">London Fashion Week</option>
+                <option value="Milan">Milan Fashion Week</option>
+                <option value="Paris">Paris Fashion Week</option>
+              </select>
+            </fieldset>
+          </section>
+          <br>
+          <!-- <button class="submit" id="submit">Submit</button> -->
+        </div>
+
+      </div>
+      <div class="bio-page" id="submit">
+        <div>
+          <img src="https://i.pinimg.com/564x/aa/de/31/aade319aa2c7f62a83628bd2ab772738.jpg" alt="profile-pic"
+            class="profileimg">
+        </div>
+        <div>
+          <h2 id="name-output" class="profileh2">Hello</h2>
+          <p id="dob-output">MM/DD/YYYY</p>
+          <p id="bio-output" class="bio"></p>
+          <h2 class="profileh2">Your Answer:</h2>
+          <p id="answer-one">1. Your favorite item in the closet:</p>
+          <p id="answer-two">2. Your fashion season is:</p>
+          <p id="answer-three">3. Your aesthetic style is: </p>
+          <p id="answer-four">4. The best Fashion Week is in </p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <section id="section3">
+      <!--<h3 class="section-title">P5 Poem</h3>
+      <div id="p5-bigbox">
+        <div id="sketch-holder"></div>
+      </div> -->
+       <h1 class="h1gallery">Jessica's Gallery</h1>
+  
+  <div class="flex-container">
+  
+    <section class="flex-column">
+
+      <img src="images/pic1.jpg" alt="picture-1">
+      <p class="caption">Better days are coming</p>
+      <img src="images/pic2.jpg" alt="picture-1">
+      <p class="caption">Mental note: Take the risk</p>
+    </section>
+    
+    <section class="flex-column">
+      <img src="images/pic3.jpg" alt="picture-1">
+      <p class="caption">Head on the cloud</p>
+      <img src="images/pic4.jpg" alt="picture-1">
+      <p class="caption">i'm never going back again</p>
+    </section>
+
+    <section class="flex-column">
+      <img src="images/pic5.png" alt="picture-1">
+      <p class="caption">Be wild but stay soft</p>
+      <img src="images/pic6.jpg" alt="picture-1">
+      <p class="caption">"your heart was glass, I dropped it"</p>
+
+    </section>
+
+    </section>
+  
+
+  </main>
+
+</body>
+
+</html>

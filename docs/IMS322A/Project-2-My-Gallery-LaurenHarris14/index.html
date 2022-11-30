@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>My Gallery</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="musicstyle.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+  <link href="https://fonts.cdnfonts.com/css/janger" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1>Lauren Harris</h1>
+
+  <nav>
+    <button class="active-button" id="home-page">Home</button>
+    <button id="tab1">Music Player</button>
+    <button id="tab2">Questionnaire</button>
+    <button id="tab3">Data Visual</button>
+  </nav>
+
+  <main>
+    <section class="active-section" id="home-section">
+
+      <article class="home-display">
+        <div class="home-text">
+          <p> Lauren Harris</p>
+          <p> 322 Final</p>
+        </div>
+
+        <div class="me-container">
+          <img class="me-pic" src="me.jpg">
+        </div>
+
+      </article>
+
+
+    </section>
+    <section id="section1">DJO- END OF BEGINNING
+      <input type="range" id="music-slider" max="159">
+      <p class= "time-tracker"> Time Tracker</p>
+      <input id="volume-slider" type="range" max="100" value="100" step="1">
+      <p class= "volume-slider"> Volume </p>
+
+      <nav class="button-container">
+
+        <div>
+          <button class="music-buttons" id="play-button">Play</button>
+          <button class="music-buttons" id="pause-button">Pause</button>
+          <button class="music-buttons" id="mute-button">Mute</button>
+        </div>
+
+        </div>
+
+        <img class="picture" src="Decide.jpeg">
+      </nav>
+
+      <audio id="djo-song">
+        <source src="DJO.mp3">
+      </audio>
+    </section>
+
+
+
+    <section id="section2">
+      <!-- Questions/Controls -->
+      <div class="all-stuff">
+        <section class="question-section">
+          <div class="question-head">
+            <p>SPRING STREET TREATS SURVEY</p>
+          </div>
+
+          <p> Enter your name </p>
+          <input type="text" id="my-text">
+
+          <p> Which do you typically order at SST? </p>
+          <select name="grade-menu" id="grade-menu">
+            <option value="Mix Up">Mix Up</option>
+            <option value="Specialty">Specialty</option>
+            <option value="Pint">Pint</option>
+            <option value="Shave Ice">Shave Ice</option>
+            <option value="Cup or Cone">Cup or Cone</option>
+            <option value="Shake or Malt">Shake or Malt</option>
+          </select>
+
+          <p> What size do you normally order? </p>
+          <select name="size-menu" id="size-menu">
+            <option value="Small">Small</option>
+            <option value="Medium">Medium</option>
+            <option value="Large">Large</option>
+          </select>
+
+          <p> Which is your favorite topping? </p>
+          <select name="topping-menu" id="topping-menu">
+            <option value="Cookie Dough">Cookie Dough</option>
+            <option value="Brownie Bites">Brownie Bites</option>
+            <option value="Rainbow Sprinkles">Rainbow Sprinkles</option>
+            <option value="Reece's Pieces">Reece's Pieces</option>
+            <option value="Fruit Topping">Fruit Topping</option>
+            <option value="Boba">Boba</option>
+          </select>
+
+          <p>How much do you love SST?</p>
+          <input type="range" id="slider">
+
+          <button id="submit-button">Submit</button>
+
+        </section>
+
+        <!-- Bio Section (to be populated with answers from the questionairre. -->
+        <section class="bio-section">
+
+          <div class="bio">
+            <label for="bio-section">You answered:</label>
+            <p id="first-output"> </p>
+            <p id="second-output"> </p>
+            <p id="third-output"> </p>
+            <p id="fourth-output"> </p>
+            <p id="fifth-output"> </p>
+          </div>
+        </section>
+
+    </section>
+
+    <section id="section3">"Where do you want to travel"
+
+      <div class="flex-bars">
+        <div class="country-bar-container">
+          <div id="france-total" class="bar"> </div>
+          <p> 5 France </p>
+        </div>
+
+        <div class="country-bar-container">
+          <div id="spain-total" class="bar2"> </div>
+          <p> 3 Spain</p>
+        </div>
+
+        <div class="country-bar-container">
+          <div id="japan-total" class="bar3"> </div>
+          <p>2 Japan</p>
+        </div>
+
+        <div class="country-bar-container">
+          <div id="ghana-total" class="bar4"> </div>
+          <p>1 Ghana</p>
+        </div>
+
+        <div class="country-bar-container">
+          <div id="switzerland-total" class="bar5"> </div>
+          <p>1 Poland</p>
+        </div>
+
+        <div class="country-bar-container">
+          <div id="brazil-total" class="bar6"> </div>
+          <p>1 Brazil</p>
+        </div>
+      </div>
+
+      <h2> Continents </h2>
+
+      <div class="continents-bars">
+
+        <div class="continent-bar-container">
+          <div id="europe-total" class="bar8"> </div>
+          <p>9 Europe</p>
+        </div>
+
+        <div class="continent-bar-container">
+          <div id="africa-total" class="bar9"> </div>
+          <p>1 Africa</p>
+        </div>
+
+        <div class="continent-bar-container">
+          <div id="asia-total" class="bar10"> </div>
+          <p>2 Asia</p>
+        </div>
+
+        <div class="continent-bar-container">
+          <div id="south-america-total" class="bar11"> </div>
+          <p>1 South America</p>
+        </div>
+
+        <div class="continent-bar-container">
+          <div id="north-america-total" class="bar12"> </div>
+          <p>0 North America</p>
+        </div>
+
+        <div class="continent-bar-container">
+          <div id="australia-total" class="bar13"> </div>
+          <p>0 Australia</p>
+        </div>
+
+        <div class="continent-bar-container">
+          <div id="antarctica-total" class="bar14"> </div>
+          <p>0 Antarctica</p>
+        </div>
+
+
+      </div>
+
+
+
+      </table>
+
+    </section>
+  </main>
+
+</body>
+
+</html>

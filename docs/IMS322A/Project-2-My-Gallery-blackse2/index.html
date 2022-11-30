@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  
+
+<nav id="top-nav">
+  <p class="phead">SKYLER BLACK</p>
+  <button class="active-button" id="tab1">Photo Gallery</button>
+  <button id="tab2">Music Player</button>
+  <button id="tab3">Data Visualization</button>
+</nav>
+
+<main>
+  <section class="active-section" id="section1">
+
+    <H1>Photo Gallery</H1>
+    <div class="flex-row">
+      <div class="flex-col">
+        <img src="images/LakeLouise.jpg" alt="Lake Louise">
+        <p class="caption">Lake Louise, Canada by Daniel Roe</p>
+      </div>
+
+      <div class="flex-col">
+        <img src="images/SaasFee.jpg" alt="Saas-Fee">
+        <p class="caption">Saas-Fee, Suiza by Vasti Vanhee</p>
+      </div> 
+    </div>   
+
+    <div class="flex-row">
+      <div class="flex-col">
+        <img src="images/AlpineMtns.jpg" alt="Alpine Mountains">
+        <p class="caption">Alpine Mountains by Ryan Schroeder</p>
+      </div>  
+    </div>  
+
+    <div class="flex-row">
+      <div class="flex-col">
+        <img src="images/SmokeyMtns.jpg" alt="smokeymtns">
+        <p class="caption">Smokey Mountains by Ron Just</p>
+      </div>
+
+      <div class="flex-col">
+        <img src="images/Camaggiore.jpg" alt="Camaggiore">
+        <p class="caption">Camaggiore, Italy by Alessio Soggetti</p>
+      </div>
+       
+    </div> 
+
+    <div class="flex-row">
+      <div class="flex-col">
+        <img src="images/RoysPeaks.jpg" alt="Roys Peaks">
+        <p class="caption">Roys Peaks, Wanaka, New Zealand by     Sander Lenaerts</p>
+      </div>    
+    </div>  
+
+    <div class="flex-row">
+      <div class="flex-col-backtop">
+        <a class= "backtop" href="#top-nav">Back to top</a>
+      </div>    
+  
+    
+    
+
+
+    </div>
+
+    
+  </section>
+
+  
+  <section id="section2">
+    <audio id="music-file">
+          <source src="The Adults Are Talking.mp3"></audio>
+
+  <!-- Construct your music player interface here - the play button has been created for you. -->
+      <h1>Music Player</h1>
+      <H3>"The Adults Are Talking"</H3>
+      <h5>The Strokes</h5>
+  
+      <div class="flex-row-1">
+          <a href="https://www.thestrokes.com/home/">
+            <img class="img1" src="albumcover.jpeg" alt="Album Cover">
+          </a> 
+        <button id="skip-back-button" class="buttons" class="flex-item">-5</button>
+        <button id="play-button" class="buttons" class="flex-item">Play</button>
+        <button id="pause-button" class="buttons" class="flex-item">Pause</button>
+        <button id="skip-ahead-button" class="buttons" class="flex-item">+5</button>
+
+      <a class= "backtop" href="#top-nav">Back to top</a>
+      </div>
+  </section>
+
+  
+  <section id="section3">
+    <H1>Data Visualization</H1>
+    <p class="presults"id="home-result"></p>
+      <p class="presults"id="total-dist-result"></p>
+      <p class="presults"id="total-pet-result"></p>
+
+  
+      <div class="flex-container">
+         <h4>How many of each type of pets in class's families</h4>
+      </div>
+  
+      <div class="flex-container">
+        <div class="flex-item-dog">25</div>
+        <div class="flex-item-cat">9</div>
+        <div class="flex-item-bird">6</div>
+        <div class="flex-item-fish">8</div>
+        <div class="flex-item-rabbits">2</div>
+        <div class="flex-item-reptiles">1</div>
+        <div class="flex-item-other">0</div>
+      </div>
+
+      <div class="flex-container">
+        <div class="flex-item-dog-2">Dogs</div>
+        <div class="flex-item-dog-2">Cats</div>
+        <div class="flex-item-dog-2">Birds</div>
+        <div class="flex-item-dog-2">Fishes</div>
+        <div class="flex-item-dog-2">Rabbits</div>
+        <div class="flex-item-dog-2">Reptiles</div>
+        <div class="flex-item-dog-2">Other</div>
+      </div>
+
+    <div class="flex-container-backtop">
+      <a class= "backtop" href="#top-nav">Back to top</a>
+    </div>
+  </section>
+</main>
+
+<div <div class="footer">
+  <p class="pfoot">Skyler Black        //        blackse2@miamioh.edu</p>
+</div>
+</body>
+
+</html>

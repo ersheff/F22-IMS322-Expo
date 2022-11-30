@@ -1,0 +1,84 @@
+/*general styling*/
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: lightsalmon;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Architects Daughter";
+  color: #9c3d06;
+}
+
+header {
+  display: flex;
+  background-color: #fedcb4;
+  font-family: "Architects Daughter";
+  align-items: center;
+  gap: 1em;
+}
+
+#sticky {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+
+.flower-icon {
+  height: 7.5vh;
+  width: auto;
+}
+
+nav {
+  background-color: #fedcb4;
+}
+
+#photo-tab, #question-tab, #poem-tab {
+  border-radius: 5px 5px 0px 0px;
+  border: none;
+  padding-left: 2.5vw;
+  padding-right: 2.5vw;
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  transition: 0.5s;
+  font-family: "Architects Daughter";
+  font-size: 20px;
+}
+
+#photo-tab:hover {
+  background-color: coral;
+}
+
+#question-tab:hover {
+  background-color: coral;
+}
+
+#poem-tab:hover {
+  background-color: coral;
+}
+
+.active-button {
+  background-color: lightsalmon;
+}
+
+.active-section {
+  display: block;
+}
+
+#poem, #photo-gallery, #questionnaire {
+  position: absolute;
+}
+
+#poem {
+  display: flex; 
+  width: 100vw;
+  justify-content: center;
+  background-color: lightsalmon;
+  margin-top: 5vh;
+}
+
+
+.no-content {
+  display: none;
+  transform: translateY(-200vh);
+}
