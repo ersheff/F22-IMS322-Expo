@@ -4,8 +4,12 @@ html, body {
   scroll-behavior: smooth;
 }
 
+img {
+  width: 300px;
+}
+
 section {
-  font-size: 6rem;
+  font-size: 1rem;
   padding: 2rem;
   height:800px;
   font-family:arial;
