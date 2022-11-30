@@ -12,6 +12,13 @@ a.btn {
   display: none;
 }
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-content h1 {
   color: black;
 }
