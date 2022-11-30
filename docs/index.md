@@ -1,3 +1,5 @@
+# Stuff goes here
+
 | IMS322A  |  IMS322B |
 --| --|
 | [Mackenzie Bajorek](IMS322A/Project-2-My-Gallery-bajoremmm/index.html)  | [Ben Brancatto](IMS322B/Project-2-My-Gallery-bbrancatto/index.html)     |
