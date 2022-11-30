@@ -1,0 +1,301 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.name {
+  background: lightblue;
+  font-family: "Lucida Handwriting", cursive;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  background-color: lightblue;
+  z-index: 500;
+  align-items: center;
+}
+
+section {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+#music-player-content {
+  display: flex;
+  flex-direction: column;
+  background-color: pink;
+}
+
+
+/* music player*/
+.love-image {
+  margin-left: 35rem;
+  margin-right: 5ch;
+  margin-top: 5ch;
+  height: auto;
+  width: 25rem;
+}
+
+#song-name {
+  font-family: "Lucida Handwriting", cursive;
+  margin-left: 40rem;
+  color: white;
+}
+
+/* Using flex with the row direction to
+   align items in a horizontal direction */
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 45rem;
+  color: white;
+  font-size: 30px;
+}
+
+.buttons:hover {
+  opacity: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 45rem;
+  color: white;
+  font-size: 30px;
+}
+ 
+.playpause-track,
+.prev-track,
+.next-track {
+  padding: 25px;
+  opacity: 0.8;
+ 
+  /* Smoothly transition the opacity */
+  transition: opacity .2s;
+}
+ 
+/* Change the opacity when mouse is hovered */
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+  opacity: 1.0;
+}
+ 
+/* Define the slider width so that it scales properly */
+.slider_container {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ 
+/* Modify the appearance of the slider */
+.seek_slider, .volume_slider {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: darkblue;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+#volume-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  height: 5px;
+  background: lightblue;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+ 
+/* Modify the appearance of the slider thumb */
+.seek_slider::-webkit-slider-thumb,
+.volume_slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+ 
+/* Change the opacity when mouse is hovered */
+.seek_slider:hover, {
+  opacity: 1.0;
+}
+ 
+.seek_slider {
+  width: 60%;
+}
+ 
+.current-time,
+.total-duration {
+  padding: 10px;
+}
+ 
+/* Change the mouse cursor to a pointer
+   when hovered over */
+i.fa-play-circle,
+i.fa-pause-circle,
+i.fa-step-forward,
+i.fa-step-backward {
+  cursor: pointer;
+}
+
+
+/* Distinguished Navbar */
+
+* {
+  box-sizing: border-box; 
+}
+
+.nin-logo {
+  width: 25%;
+}
+
+#nav-explanation {
+  color: black;
+}
+
+:root {
+  --red: #e4040c;
+  --blue: #00c3e3;
+  --p: 2ch;
+  --pp: 4ch;
+}
+
+.switch {
+  width: 100%;
+  padding-top: 10ch;
+  animation-name: my-animation;
+  animation-duration: 5s;
+}
+
+.flex-container{
+  display: flex;
+  gap: 11ch;
+  background-color: var(--red);
+  padding-left: 2ch;
+  position: static;
+}
+
+a {
+  display: inline-block;
+  transition: 2s;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+a:hover {
+ background-color: var(--blue);
+  transform: scale(150%);
+  color: white;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  color: white;
+}
+
+@keyframes my-animation {
+  from { margin-left: -50px; }
+  to { margin-left: 0%; }
+}
+
+/* Currently set to the width of an iPhone 13 display - feel free to adjust as needed */
+@media (max-width: 400px) {
+  .flex-container {
+    flex-direction: column;
+    padding-top: 5ch;
+    padding-bottom: 5ch;
+  }
+}
+
+/* questionnare stuff */
+
+.background-tiel {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+}
+
+.flex-tiel {
+  position: relative;
+  text-align: center;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+#tiel-text {
+  color: yellow;
+  font-family: serif;
+}
+
+.input-column {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.adoption-date {
+  color: yellow;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 20px;
+}
+
+#number-section {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color:#D3D3D3;
+}
+
+#color-section {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-bottom: 20px;
+  background-color:#D3D3D3;
+}
+
+#submit-button {
+  text-align: center;
+  height: 25px;
+  width: 30%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+   color: #F74233; 
+}
+
+.tiel-icon {
+  width: 30%;
+  height: auto;
+}
+
+#bio-section {
+  background-color:#D3D3D3;
+}
+
+#sing-name {
+  color: darkblue;
+ padding-left: 45rem;
+}
